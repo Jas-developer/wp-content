@@ -20,13 +20,14 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header class="site-header py-3 d-flex align-items-center justify-content-between w-75 mx-auto">
-    <div class="logo text-danger">
+  <header class="site-header py-3 d-flex flex-md-row  flex-column   align-items-center justify-content-between w-75 mx-auto">
+    <div class="logo text-danger d-flex align-items-center justify-content-between ">
       <h1>Logo</h1>
+      <button class="d-md-none ">Close</button>
     </div>
     <div class="nav-container ">
       <!-- large screens -->
-        <nav class="d-md-flex d-none p-3 justify-content-center w-100">
+        <nav class="large-screen-nav d-md-flex d-none p-3 justify-content-center w-100">
             <ul class="d-flex gap-4 list-unstyled align-items-center justify-content-center m-0 flex-row fw-normal">
                 <li ><a class="text-decoration-none text-light text-shadow" href="<?php echo home_url(); ?>">HOME</a></li>
                 <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
@@ -36,13 +37,14 @@
         </nav>
 
         <!-- small screens -->
+        <nav id="small-screen-nav" class="d-md-none p-3 position-relative">
+         <ul class="d-flex flex-column gap-3 list-unstyled m-0 w-100 align-items-center">
+         <li><a class="text-decoration-none text-light text-shadow" href="<?php echo home_url(); ?>">HOME</a></li>
+            <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
+            <li><a class="text-decoration-none text-light" href="<?php echo home_url('/services'); ?>">CERTIFIED TRAINERS</a></li>
+            <li><button class="bg-danger rounded-1 shadow border-0 px-3 py-1 text-light">LOGIN</button></li>
+          </ul>
+        </nav>
+
     </div>
-
-
-
-
-
-
-
-    
   </header>
