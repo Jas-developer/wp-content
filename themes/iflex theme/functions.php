@@ -1,4 +1,13 @@
 <?php
+
+
+
+
+// hide top admin bar
+add_filter( "show_admin_bar", '__return_false' );
+
+
+// Enqueue Bootstrap CSS and JS
 function theme_enqueue_scripts() {
     // Bootstrap CSS
     wp_enqueue_style(

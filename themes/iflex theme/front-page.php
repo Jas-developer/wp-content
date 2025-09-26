@@ -1,5 +1,5 @@
 <?php 
-?> <div class="main bg-danger "> <?php
+?> <div class="main bg-black "> <?php
 // header
 get_header(); ?>
 </div>
