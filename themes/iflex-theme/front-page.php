@@ -2,7 +2,7 @@
 // header
 get_header(); ?>
 this is front
-<?php wp_footer( );
+<?php get_footer( );
 
 ?>
     

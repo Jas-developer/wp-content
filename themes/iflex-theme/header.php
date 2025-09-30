@@ -24,8 +24,8 @@
   <div class="nav-container w-100">
 
     <!-- Large screens -->
-    <nav class="d-none d-md-flex p-3 justify-content-end w-100">
-      <ul class="d-flex gap-4 list-unstyled m-0 align-items-center justify-content-end">
+    <nav class="d-none d-md-flex p-lg-3 p-md-2 fs-md-4 fs-lg-2 justify-content-end w-100">
+      <ul class="d-flex gap-4  list-unstyled m-0 align-items-center justify-content-end">
         <li><a class="text-decoration-none text-light" href="<?php echo home_url(); ?>">HOME</a></li>
         <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
         <li><a class="text-decoration-none text-light" href="<?php echo home_url('/services'); ?>">CERTIFIED TRAINERS</a></li>
