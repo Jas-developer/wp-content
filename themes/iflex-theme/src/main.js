@@ -1,1 +1,1 @@
-console.log("Hello from iflex-theme main.js");
+import "../components/navbar.js";

@@ -17,7 +17,7 @@
   <!-- Logo + mobile toggle -->
   <div class="d-flex w-100 justify-content-between align-items-center px-3">
     <h1 class="text-danger m-0">Logo</h1>
-    <button class="d-md-none btn btn-sm text-light">Close</button>
+    <button id="nav-toggle" class="d-md-none btn btn-sm text-light">Close</button>
   </div>
 
   <!-- Navigation -->
@@ -39,7 +39,7 @@
     </nav>
 
     <!-- Small screens -->
-    <nav id="small-screen-nav" class="d-md-none p-3">
+    <nav id="sm-nav-menu" class="d-md-none d-none p-3">
       <ul class="d-flex flex-column gap-3 list-unstyled m-0 w-100 align-items-center">
         <li><a class="text-decoration-none text-light" href="<?php echo home_url(); ?>">HOME</a></li>
         <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
