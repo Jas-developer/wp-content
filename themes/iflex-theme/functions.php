@@ -3,12 +3,27 @@
 
 
 
+
+
+
+
+
+
+
 // hide top admin bar
 add_filter( "show_admin_bar", '__return_false' );
 
 
 // Enqueue Bootstrap CSS and JS
 function theme_enqueue_scripts() {
+    // Enqueue custom JS file
+   wp_enqueue_script(
+    'iflex-index-js',
+    get_theme_file_uri('build/main.js'), // Adjusted path to include the 'src' folder
+    array(),
+    filemtime(get_theme_file_path('build/main.js')),
+    true
+);
     // Bootstrap CSS
     wp_enqueue_style(
         'bootstrap-css',
@@ -33,5 +48,7 @@ function theme_enqueue_scripts() {
         '5.3.3',
         true
     );
+    
+
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
