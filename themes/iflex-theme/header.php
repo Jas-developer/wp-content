@@ -12,46 +12,35 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
- <header class="site-header w-100 bg-black py-3 px-3 d-flex flex-md-row flex-column align-items-center justify-content-between mx-auto">
-
-  <!-- Logo + mobile toggle -->
-  <div class="d-flex w-100 justify-content-between align-items-center px-3">
-    <h1 class="text-danger m-0">Logo</h1>
-    <button id="nav-toggle" class="d-md-none btn btn-sm text-light">Close</button>
-  </div>
-
-  <!-- Navigation -->
-  <div class="nav-container w-100">
-
-    <!-- Large screens -->
-    <nav class="d-none d-md-flex p-lg-3 p-md-2 fs-md-4 fs-lg-2 justify-content-end w-100">
-      <ul class="d-flex gap-4  list-unstyled m-0 align-items-center justify-content-end">
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url(); ?>">HOME</a></li>
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url('/services'); ?>">CERTIFIED TRAINERS</a></li>
-        <li>
-          <a href="<?php echo home_url('/contact'); ?>" 
-             class="bg-danger rounded-1 shadow border-0 px-3 py-1 text-light text-decoration-none d-inline-block">
-             LOGIN
-          </a>
-        </li>
+  <header class="container">
+  
+   <nav class="row align-items-center py-3">
+    <!-- LOGO AND HAMBURGER BUTTON  -->
+    <div class="container col-lg-4 col-12">
+        <!-- LARGE SCREEN - LOGO -->
+          <div class="d-none align-items-center d-lg-flex">
+             <h1>LOGO</h1>
+          </div>
+        <!-- SMALL | MEDIUM SCREEN - LOGO & BUTTON -->
+        <div id="logo-container" class="row align-items-center d-flex d-lg-none justify-content-center  p-0">
+         <div id="sm-logo" class="logo-container d-flex  col-6 d-flex justify-content-start align-items-center">
+           <span>LOGO</span>
+         </div>
+         <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
+           <button>OPEN</button>
+         </div>
+      </div>
+    </div>
+  <!-- NAVIGATION LINKS  -->
+   <div id="nav-links-container" class="col-lg-8 d-lg-flex justify-content-lg-end justify-content-center align-items-center">
+      <ul class="list-unstyled gap-lg-4 gap-3 nav flex-lg-row flex-column align-items-center">
+        <li><a href="#" class="text-decoration-none">HOME</a></li>
+        <li><a href="#" class="text-decoration-none">CERTIFICATIONS</a></li>
+        <li><a href="#" class="text-decoration-none">CERTIFIED TRAINERS</a></li>
+        <li><a href="#" class="text-decoration-none">MEMBERSHIPS</a></li>
+         <button class="bg-danger border border-0">LOGIN</button>
       </ul>
-    </nav>
+   </div>
+</nav>
 
-    <!-- Small screens -->
-    <nav id="sm-nav-menu" class="d-md-none   d-none p-3">
-      <ul class="d-flex flex-column gap-3 list-unstyled m-0 w-100 align-items-center">
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url(); ?>">HOME</a></li>
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url('/about'); ?>">CERTIFICATIONS</a></li>
-        <li><a class="text-decoration-none text-light" href="<?php echo home_url('/services'); ?>">CERTIFIED TRAINERS</a></li>
-        <li>
-          <a href="<?php echo home_url('/contact'); ?>" 
-             class="bg-danger rounded-1 shadow border-0 px-3 py-1 text-light text-decoration-none d-inline-block">
-             LOGIN
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-  </div>
 </header>
