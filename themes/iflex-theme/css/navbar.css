@@ -1,0 +1,45 @@
+/* Base styles for hidden nav (mobile/smaller screens) */
+.nav-hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* stacked vertically on small screens */
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Shown state on small screens */
+.nav-hidden.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  height: auto;
+}
+
+/* On large screens (lg and up), make it always visible and in a row */
+@media (min-width: 1024px) {
+  .nav-hidden {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* or center */
+    align-items: center;
+    transition: none; /* disable animation on large screens */
+  }
+
+  .nav-hidden.show {
+    /* Prevent overriding styles */
+    opacity: 1;
+    transform: none;
+    height: auto;
+  }
+}

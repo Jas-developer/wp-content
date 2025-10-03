@@ -1,14 +1,17 @@
-const navToggle = document.getElementById("nav-toggle");
-const navMenu = document.getElementById("sm-nav-menu");
+const toggleButton = document.getElementById("toggle-button");
+const navItems = document.getElementById("nav-items");
 
-navToggle.addEventListener("click", () => {
-  const isOpen = navMenu.classList.contains("d-none") ? true : false;
-
-  if (isOpen) {
-    navToggle.textContent = "open";
-    navMenu.classList.remove("d-none");
+toggleButton.addEventListener("click", () => {
+  const isHidden = navItems.classList.contains("show") ? true : false;
+  if (isHidden) {
+    requestAnimationFrame(() => {
+      navItems.classList.remove("show");
+    });
+    toggleButton.textContent = "CLOSE";
   } else {
-    navToggle.textContent = "Close";
-    navMenu.classList.add("d-none");
+    requestAnimationFrame(() => {
+      navItems.classList.add("show");
+    });
+    toggleButton.textContent = "OPEN";
   }
 });

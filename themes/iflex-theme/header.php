@@ -27,14 +27,14 @@
            <span>LOGO</span>
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
-           <button>OPEN</button>
+           <button id="toggle-button">OPEN</button>
          </div>
       </div>
     </div>
   <!-- NAVIGATION LINKS  -->
-   <div id="nav-links-container" class="col-lg-8 d-lg-flex justify-content-lg-end justify-content-center align-items-center">
+   <div id="nav-items" class="nav-hidden col-lg-8 ">
       <ul class="list-unstyled gap-lg-4 gap-3 nav flex-lg-row flex-column align-items-center">
-        <li><a href="#" class="text-decoration-none">HOME</a></li>
+        <li><a href="#" class="text-decoration-none text-secondary">HOME</a></li>
         <li><a href="#" class="text-decoration-none">CERTIFICATIONS</a></li>
         <li><a href="#" class="text-decoration-none">CERTIFIED TRAINERS</a></li>
         <li><a href="#" class="text-decoration-none">MEMBERSHIPS</a></li>

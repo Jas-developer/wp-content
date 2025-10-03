@@ -24,6 +24,14 @@ function theme_enqueue_scripts() {
     filemtime(get_theme_file_path('build/main.js')),
     true
 );
+
+// custom css | main css
+wp_enqueue_style( 'iflex-main-css', get_theme_file_uri( "build/main.css" ), 
+array(), filemtime(get_theme_file_path( "build/main.css" )) );
+
+
+
+
     // Bootstrap CSS
     wp_enqueue_style(
         'bootstrap-css',
