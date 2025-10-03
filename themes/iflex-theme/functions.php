@@ -1,14 +1,14 @@
 <?php
 
+// configure the logo size
+add_filter( 'get_custom_logo', function ($html){
+   $html = str_replace('custom-logo','iflex-logo', $html);
+   return $html;
+});
 
 
-
-
-
-
-
-
-
+// alow uploading logo 
+add_theme_support( 'custom-logo' );
 
 // hide top admin bar
 add_filter( "show_admin_bar", '__return_false' );

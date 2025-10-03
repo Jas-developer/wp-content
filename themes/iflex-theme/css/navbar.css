@@ -1,3 +1,20 @@
+/* configure the logo size */
+@media (max-width: 1024px) {
+  .iflex-logo {
+    width: 170px;
+    height: auto;
+  }
+}
+
+/* buttons, Nav, Text */
+#login-button {
+  background-color: E84444 !important;
+  transition: transform 0.3s ease-in-out;
+}
+#login-button:hover {
+  transform: scale(1.05);
+}
+
 /* Base styles for hidden nav (mobile/smaller screens) */
 .nav-hidden {
   opacity: 0;
@@ -23,6 +40,7 @@
 }
 
 /* On large screens (lg and up), make it always visible and in a row */
+
 @media (min-width: 1024px) {
   .nav-hidden {
     opacity: 1;
@@ -41,5 +59,16 @@
     opacity: 1;
     transform: none;
     height: auto;
+  }
+
+  .nav-hidden a {
+    transition:
+      transform 0.3s ease,
+      font-size 0.3s ease;
+    display: inline-block; /* needed for transform to work properly */
+  }
+
+  .nav-hidden a:hover {
+    transform: scale(1.1);
   }
 }
