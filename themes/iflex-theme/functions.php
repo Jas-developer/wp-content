@@ -5,6 +5,8 @@ add_filter( 'get_custom_logo', function ($html){
    $html = str_replace('custom-logo','iflex-logo', $html);
    return $html;
 });
+// load dash icons 
+wp_enqueue_style('dashicons');
 
 
 // alow uploading logo 
@@ -28,9 +30,6 @@ function theme_enqueue_scripts() {
 // custom css | main css
 wp_enqueue_style( 'iflex-main-css', get_theme_file_uri( "build/main.css" ), 
 array(), filemtime(get_theme_file_path( "build/main.css" )) );
-
-
-
 
     // Bootstrap CSS
     wp_enqueue_style(

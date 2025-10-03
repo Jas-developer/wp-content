@@ -35,7 +35,9 @@
               ?>
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
-           <button id="toggle-button">OPEN</button>
+           <button id="toggle-button" class="border border-0 bg-transparent">
+            <span class="dashicons dashicons-menu-alt3"></span>
+           </button>
          </div>
       </div>
     </div>
