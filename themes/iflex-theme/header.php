@@ -12,9 +12,9 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header class="container">
+  <header id="header-container" class="container">
   
-   <nav class="row align-items-center py-3">
+   <nav class="row align-items-center py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
         <!-- LARGE SCREEN - LOGO -->
@@ -35,19 +35,19 @@
               ?>
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
-           <button id="toggle-button" class="border border-0 bg-transparent">
-            <span class="dashicons dashicons-menu-alt3"></span>
+           <button id="toggle-button" class="border-0 position-relative bg-transparent">
+           <span style="margin-left:-10px; font-size:25px;" class="dashicons dashicons-menu-alt3 text-danger position-absolute top-50 start-50 translate-middle z-3"></span>
            </button>
          </div>
       </div>
     </div>
   <!-- NAVIGATION LINKS  -->
-   <div id="nav-items" class="nav-hidden col-lg-8 ">
-      <ul class="list-unstyled gap-lg-4 fw-semibold gap-3 nav flex-lg-row flex-column align-items-center">
-        <li><a href="#" class="text-decoration-none text-dark">HOME</a></li>
-        <li><a href="#" class="text-decoration-none text-dark">CERTIFICATIONS</a></li>
-        <li><a href="#" class="text-decoration-none text-dark">CERTIFIED TRAINERS</a></li>
-        <li><a href="#" class="text-decoration-none text-dark">MEMBERSHIPS</a></li>
+   <div id="nav-items" class="nav-hidden col-lg-8 z-2">
+      <ul class="list-unstyled  gap-lg-4 fw-semibold gap-3 nav flex-lg-row flex-column align-items-center">
+        <li><a href="#" class="text-decoration-none text-light">HOME</a></li>
+        <li><a href="#" class="text-decoration-none text-light">CERTIFICATIONS</a></li>
+        <li><a href="#" class="text-decoration-none text-light">CERTIFIED TRAINERS</a></li>
+        <li><a href="#" class="text-decoration-none text-light">MEMBERSHIPS</a></li>
          <button id="login-button" class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
       </ul>
    </div>

@@ -29,6 +29,9 @@
   align-items: center;
   height: 0;
   overflow: hidden;
+  position: fixed;
+  background-color: black;
+  top: 0;
 }
 
 /* Shown state on small screens */
@@ -36,21 +39,29 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
-  height: auto;
+  height: 100vh;
 }
 
 /* On large screens (lg and up), make it always visible and in a row */
 
 @media (min-width: 1024px) {
+  #header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   .nav-hidden {
     opacity: 1;
     transform: none;
     pointer-events: auto;
+    position: relative;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end; /* or center */
     align-items: center;
+    background-color: transparent;
     transition: none; /* disable animation on large screens */
   }
 
