@@ -12,9 +12,10 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header id="header-container" class="container">
+  <header id="header-container" class="">
   
-   <nav class="row align-items-center py-3 d-lg-fixed">
+   <div class="container">
+    <nav class="row align-items-center py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
         <!-- LARGE SCREEN - LOGO -->
@@ -53,4 +54,5 @@
    </div>
 </nav>
 
+   </div>
 </header>

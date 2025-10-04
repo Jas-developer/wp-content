@@ -46,6 +46,12 @@
 
 @media (min-width: 1024px) {
   #header-container {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
     position: fixed;
     top: 0;
     left: 0;
