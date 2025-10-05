@@ -16,9 +16,16 @@
 
   .divider-container {
     border-top-left-radius: 500px;
+    border-bottom: 100px;
     width: 80%;
     height: 40%;
     align-self: self-end;
     background-color: #8b0000;
+  }
+
+  .custom-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* thickness of underline */
+    text-underline-offset: 6px; /* space from text */
   }
 }
