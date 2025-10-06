@@ -1,5 +1,29 @@
 <?php
 
+/*
+ Redirect user Based on Roles
+ - If user  is administrator redirect to admin dashboard
+ - If user is subscriber redirect to home page 
+*/
+add_filter( 'login_redirect', 'redirect_user_by_role', 10, 3 );
+
+function redirect_user_by_role($redirect_to,$request,$user){
+  if(isset($user->roles) && is_array($user->roles)){
+
+    if(in_array('administrator', $user->roles)){
+      return admin_url();
+    }
+
+    if(in_array('subscriber', $user->roles)){
+      return home_url();
+    }
+  }
+}
+
+
+
+
+
 // configure the logo size
 add_filter( 'get_custom_logo', function ($html){
    $html = str_replace('custom-logo','iflex-logo', $html);

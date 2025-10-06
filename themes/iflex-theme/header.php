@@ -34,6 +34,7 @@
                   the_custom_logo();
                 }
               ?>
+               
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
            <button id="toggle-button" class="border-0 position-relative bg-transparent">
@@ -51,15 +52,16 @@
         <?php if(is_user_logged_in(  )){ ?> 
           <li><a href="#" class=" custom-underline d-inline-block transition-transform hover-scale-105 text-light">MODULES</a></li>
           <div class="logged-in-container d-flex gap-4  justify-content-center align-items-center">
-            <button id="login-button" class="bg-light border border-0 text-success py-2 shadow-sm  px-4 rounded-1">EXAMS</button>
-            <button class="text-danger fw-bold cursor-pointer border border-0 bg-transparent" onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
+            <button id="login-button" class="bg-primary border shadow-md fw-semibold border-0 text-light py-2 shadow-sm  px-4 rounded-pill">EXAMS</button>
+            <button class="text-danger fw-bold cursor-pointer border border-0 bg-transparent" 
+            onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
           </div> <?php } else { ?>
             <li><a href="#" class="text-decoration-none text-light">MEMBERSHIPS</a></li>
-            <button id="login-button" class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
+            <button id="login-button" onclick="window.location.href='<?php echo wp_login_url() ?>'"
+            class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
         <?php } ?>
       </ul>
    </div>
 </nav>
-
    </div>
 </header>

@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 <!-- FRONT-PAGE CONTENT -->
  <section id="hero-section" style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.png' ) ?>')" 
- class=" d-flex flex-column justify-content-center align-items-center bg-black">
-
-    <div class="container h-75 d-flex ps-5 justify-content-start align-items-end ">
-      <h1 id="hero-section-heading" class="text-white">TRAINING GROUND
+ class="d-flex flex-column justify-content-center align-items-center bg-black">
+    <div class="hero-section-overlay">
+      
+    </div>
+    <div class="container-lg container-fluid h-75 d-flex ps-lg-5 justify-content-lg-start align-items-lg-end ">
+      <h1 id="hero-section-heading" class="text-white w-100">TRAINING GROUND
         <br>
          <span class="text-danger">FOR GREATNESS</span>
       </h1>
