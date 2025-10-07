@@ -1,11 +1,30 @@
 <?php
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+/*
+ Restrict users navigating to pages by url 
+  - Modules is only available for logged in users / student
+  - Redirect to home page if not logged in
+*/ 
+ 
+function restrict_url_navigation(){
+  if(is_page( 'modules') && !is_user_logged_in()):
+   wp_redirect(home_url());
+   exit;
+  endif;
+}
+
+
+
+add_action( 'template_redirect', 'restrict_url_navigation');
 /*
  Redirect user Based on Roles
  - If user  is administrator redirect to admin dashboard
  - If user is subscriber redirect to home page 
 */
-add_filter( 'login_redirect', 'redirect_user_by_role', 10, 3 );
+
 
 function redirect_user_by_role($redirect_to,$request,$user){
   if(isset($user->roles) && is_array($user->roles)){
@@ -20,8 +39,7 @@ function redirect_user_by_role($redirect_to,$request,$user){
   }
 }
 
-
-
+add_filter( 'login_redirect', 'redirect_user_by_role', 10, 3 );
 
 
 // configure the logo size
