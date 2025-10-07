@@ -46,20 +46,38 @@
   <!-- NAVIGATION LINKS  -->
    <div id="nav-items" class="nav-hidden col-lg-8 z-2">
       <ul class="list-unstyled  gap-lg-4 fw-semibold gap-3 nav flex-lg-row flex-column align-items-center">
-        <li><a href="#" class="text-decoration-none text-light">HOME</a></li>
-        <li><a href="#" class="text-decoration-none text-light">CERTIFICATIONS</a></li>
-        <li><a href="#" class="text-decoration-none text-light">CERTIFIED TRAINERS</a></li>
-        <?php if(is_user_logged_in(  )){ ?> 
-          <li><a href="#" class=" custom-underline d-inline-block transition-transform hover-scale-105 text-light">MODULES</a></li>
-          <div class="logged-in-container d-flex gap-4  justify-content-center align-items-center">
-            <button id="login-button" class="bg-primary border shadow-md fw-semibold border-0 text-light py-2 shadow-sm  px-4 rounded-pill">EXAMS</button>
+        <li><a href="<?php echo home_url(); ?>" 
+         class="<?php if(is_front_page()): 
+          echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">HOME</a>
+        </li>
+        <li><a href="<?php echo get_permalink(35); ?>" 
+          class="<?php if(is_page(35)): 
+          echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFICATIONS</a>
+        </li>
+        <li><a href="<?php echo get_permalink(37)?>" 
+          class="<?php if(is_page(37)): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
+        </li>
+       <!-- show only if user is logged in  -->
+        <?php if(is_user_logged_in()): ?> 
+          <li><a href="<?php echo get_permalink(16); ?>" class="<?php  if(is_page(16)): echo 'custom-underline'; else: echo 'text-decoration-none';
+              endif;  ?> d-inline-block transition-transform hover-scale-105 text-light">MODULES</a>
+          </li>
+           <div class="logged-in-container d-flex gap-4  justify-content-center align-items-center">
+            <button id="login-button" 
+              onclick="window.location.href='<?php echo get_permalink(39) ?>'"
+              class="<?php if(is_page(39)): echo 'border-2'; else: echo 'border-0'; endif; ?> 
+              bg-primary border shadow-md fw-semibold text-light py-2 shadow-sm  px-4 rounded-pill">
+              EXAMS
+            </button>
             <button class="text-danger fw-bold cursor-pointer border border-0 bg-transparent" 
             onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
-          </div> <?php } else { ?>
-            <li><a href="#" class="text-decoration-none text-light">MEMBERSHIPS</a></li>
+           </div> 
+        <!-- show only if user is not logged in -->
+          <?php else:  ?>
+            <li><a href="#" class="text-decoration-none text-light">JOIN US</a></li>
             <button id="login-button" onclick="window.location.href='<?php echo wp_login_url() ?>'"
             class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
-        <?php } ?>
+        <?php endif; ?>
       </ul>
    </div>
 </nav>
