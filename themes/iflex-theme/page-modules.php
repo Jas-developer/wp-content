@@ -1,48 +1,46 @@
 <?php get_header(); ?>
-<section id="modules-section" class="d-flex vh-100 w-100 container  justify-content-center align-items-center">
-  <?php
 
+<main id="modules-section" class="container mt-lg-5 justify-content-center align-items-center vh-100 pt-5">
+  <?php
   $args = [
     'post_type' => 'modules',
     'posts_per_page' => -1,
-    'orderby' =>  'date',
+    'orderby' => 'date',
     'order' => 'DESC'
   ];
-  
-  $module_query = new WP_Query($args);  
+
+  $module_query = new WP_Query($args);
   ?>
-  <!-- module/files container  -->
- <?php if( $module_query): ?>
-   <div class="row w-100 row-cols-lg-2 g-2 justify-content-start align-items-center">
-       <?php while($module_query->have_posts()): $module_query->the_post(); ?>
-          <div class="col-lg-6 col-12">
-            <div class="d-flex rounded-3 shadow-lg justify-content-center flex-column py-3 px-4 align-items-start module-card bg-black">
-            <!-- title -->
-             <h3 class="module-title text-danger fw-100">
-               <?php echo get_the_title() ?>
-             </h3>
-             <!-- discription -->
-              <div class="module-description">
-                 <p class="text-light"> <?php echo get_the_content(); ?></p>
+
+  <?php if ($module_query->have_posts()) : ?>
+    <div class="row g-3 border-1 mt-lg-5">
+      <?php while ($module_query->have_posts()) : $module_query->the_post(); ?>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="border rounded p-3 bg-white h-100">
+            <?php $image = get_field('thumbnail'); ?>
+            <?php if ($image) : ?>
+              <img src="<?php echo esc_url($image['url']); ?>" alt="" class="img-fluid mb-3 rounded">
+            <?php endif; ?>
+
+            <h5 class="mb-2 text-dark"><?php the_title(); ?></h5>
+            <p class="text-muted small mb-3"><?php echo wp_trim_words(get_the_content(), 20); ?></p>
+
+            <?php $file = get_field('iflex_modules'); ?>
+            <?php if ($file) : ?>
+              <div class="d-flex gap-2">
+                <a href="<?php echo esc_url($file['url']); ?>" class="btn btn-outline-secondary btn-sm">View</a>
+                <a href="<?php echo esc_url($file['url']); ?>" download class="btn btn-primary btn-sm">Download</a>
               </div>
-              <!-- download button -->
-                <?php $file = get_field('iflex_modules'); ?>
-                <div id="module-download-button" class="d-flex gap-2 justify-content-center align-items-center">
-                 <?php if($file): ?>
-                  <span class="text-white custom-underline">View Module</span>
-                  <a href="<?php echo esc_url($file['url']); ?>"  download class="btn download-btn btn-primary">
-                   Download Module
-                 </a>
-                 <?php endif; ?>
-               </div>
+            <?php endif; ?>
           </div>
-          </div>
-       <?php endwhile; ?> 
-   </div>
-<?php else: ?>
-  <div class="no-module">
-    <span>No module available</span>
-  </div>
-<?php endif; ?>  
-</section>
+        </div>
+      <?php endwhile; ?>
+    </div>
+  <?php else : ?>
+    <div class="text-center py-5">
+      <p class="text-muted">No modules available.</p>
+    </div>
+  <?php endif; ?>
+</main>
+
 <?php get_footer(); ?>
