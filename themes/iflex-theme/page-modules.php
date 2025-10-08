@@ -30,14 +30,14 @@
                 <div id="module-download-button" class="d-flex gap-2 justify-content-center align-items-center">
                  <?php if($file): ?>
                   <span class="text-white custom-underline">View Module</span>
-                  <a href="<?php echo esc_url($file['url']); ?>" download class="btn btn-primary">
+                  <a href="<?php echo esc_url($file['url']); ?>"  download class="btn download-btn btn-primary">
                    Download Module
                  </a>
                  <?php endif; ?>
                </div>
           </div>
           </div>
-       <?php endwhile; ?>
+       <?php endwhile; ?> 
    </div>
 <?php else: ?>
   <div class="no-module">
