@@ -12,9 +12,9 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header id="header-container" class="">
+  <header id="header-container" class="overflow-hidden">
   
-   <div class="container">
+   <div class="container overflow-hidden">
     <nav class="row align-items-center py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
