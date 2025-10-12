@@ -20,12 +20,15 @@
 
     
       <!-- floating info -->
-         <div class="floating-info-container position-relative justify-content-center align-items-center px-3 py-5 shadow-lg w-75 bg-white container ">
+       <div class="floating-info-container position-relative">
+         <div class="rounded position-relative justify-content-center align-items-center px-3 py-5 shadow-lg w-75 bg-white container ">
             <?php get_template_part( 'template-parts/floating','info')?>
          </div>
+       </div>
+         
       <!-- about us --> 
-         <div class="about-us-container relative">
-
+         <div class="about-us-container position-relative z-n1">
+             <h1>This is the about section</h1>
          </div>
 
   

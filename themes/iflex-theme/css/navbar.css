@@ -69,6 +69,7 @@
     align-items: center;
     background-color: transparent;
     transition: none; /* disable animation on large screens */
+    z-index: 999999999 !important;
   }
 
   .nav-hidden.show {
@@ -76,6 +77,7 @@
     opacity: 1;
     transform: none;
     height: auto;
+    z-index: 9999999 !important;
   }
 
   .nav-hidden a {
