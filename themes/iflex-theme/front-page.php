@@ -3,7 +3,7 @@
 <section 
   id="hero-section" 
   style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.png' ) ?>')" 
-  class="d-flex flex-column justify-content-center align-items-center bg-black"
+  class="d-flex flex-column justify-content-center align-items-center bg-black "
 >
   <div class="hero-section-overlay">
   </div>
@@ -36,7 +36,7 @@
 </div>
 
 <!-- about us -->
-<div class="about-us-container w-100 position-relative z-n1">
+<div class="about-us-container w-100 position-relative z-n1 ">
   <?php get_template_part( 'template-parts/about', 'us' ) ?>
 </div>
 

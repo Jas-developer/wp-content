@@ -1,6 +1,38 @@
-/* 50% width on medium screen */
+:root {
+  --spacing-1: 1rem;
+  --spacing-2: 2rem;
+  --spacing-3: 3rem;
+  --spacing-4: 4rem;
+  --spacing-5: 5rem;
+  --spacing-6: 6rem;
+  --spacing-7: 7rem;
+  --spacing-8: 8rem;
+  --spacing-9: 9rem;
+  --spacing-10: 10rem;
+}
+
+@media (min-width: 1023px) {
+  /* margin top */
+  .mt-lg-6 {
+    margin-top: var(--spacing-6);
+  }
+  .mt-lg-7 {
+    margin-top: var(--spacing-7);
+  }
+  .mt-lg-8 {
+    margin-top: var(--spacing-8);
+  }
+  .mt-lg-9 {
+    margin-top: var(--spacing-9);
+  }
+
+  .mt-lg-10 {
+    margin-top: var(--spacing-10);
+  }
+}
 
 @media (min-width: 768px) {
+  /* width */
   .w-md-50 {
     width: 50% !important;
   }
