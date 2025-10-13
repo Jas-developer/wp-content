@@ -5,3 +5,24 @@
     width: 50% !important;
   }
 }
+
+/* custom underline for navigation */
+.custom-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* for buttons when hovering */
+.scale-btn-hover {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.scale-btn-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
