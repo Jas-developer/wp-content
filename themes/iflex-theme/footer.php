@@ -22,9 +22,9 @@
          </div> 
        </div>
        <!-- #2 -->
-       <div class="col-lg-6 col-12 d-flex flex-column  justify-content-between align-items-start">
+       <div class="col-lg-6 col-12 d-flex flex-column gap-4 mt-2 justify-content-between align-items-start">
         <!-- icons | container  -->
-         <div class="w-100 d-flex flex-row justify-content-end gap-4 align-items-center">
+         <div class="w-100 d-flex flex-row justify-content-lg-end justify-content-start gap-4 align-items-center">
            <span class="dashicons dashicons-instagram text-light fs-2"></span>
            <span class="dashicons dashicons-linkedin text-light fs-2"></span>
            <span class="dashicons dashicons-facebook text-light fs-2"></span>
