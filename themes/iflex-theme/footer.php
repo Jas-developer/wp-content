@@ -22,12 +22,22 @@
          </div> 
        </div>
        <!-- #2 -->
-       <div class="col-lg-6 col-12 d-flex justify-content-center align-items-end">
-
-       </div>
+       <div class="col-lg-6 col-12 d-flex flex-column  justify-content-between align-items-start">
+        <!-- icons | container  -->
+         <div class="w-100 d-flex flex-row justify-content-end gap-4 align-items-center">
+           <span class="dashicons dashicons-instagram text-light fs-2"></span>
+           <span class="dashicons dashicons-linkedin text-light fs-2"></span>
+           <span class="dashicons dashicons-facebook text-light fs-2"></span>
+         </div>
+         <!-- text-content-container -->
+         <div class="flex-row d-flex  w-100 justify-content-between  text-light align-items-end">
+          <span>Privacy Policy</span>
+          <span>Terms & Conditions</span>
+         </div>
+       </div> 
       </div>
     </div>
-    <!-- end of contanier -->
+    <!-- end of contanier --> 
   </div>
   <?php wp_footer(); ?>
 </footer>
