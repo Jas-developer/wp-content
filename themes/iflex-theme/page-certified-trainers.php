@@ -11,7 +11,7 @@
     <?php
      $args = array(
         'post_type' => 'certified_trainers',
-        'post_per_page' => 10,
+        'posts_per_page' => 10,
         'orderby' => 'date',
         'order' => 'DESC'
      );
@@ -22,7 +22,7 @@
       <!-- CERTIFIED TRAINERS CARD -->
          <?php if($certified_trainers->have_posts()):  ?>
             <?php while($certified_trainers->have_posts()): $certified_trainers->the_post(); ?>
-             <div class="certified-trainer-card rounded z-n1 d-flex shadow-lg gap-4 flex-column justify-content-center align-items-center px-lg-3 py-lg-4 ">
+             <div class="certified-trainer-card rounded  d-flex shadow-lg gap-4 flex-column justify-content-center align-items-center px-lg-3 py-lg-4 ">
                 <!-- trainer image  -->
                 <div class="trainer-img-card w-100 overflow-hidden position-relative ">
                    <?php $imageUrl = get_field('certified_trainer'); ?>
@@ -42,9 +42,9 @@
                  </div>
                  <!-- button content -->
                  <div class="view-profile-btn w-100 mt-2">
-                    <button class="align-items-center w-100 d-flex border border-2 gap-3 rounded-pill border-danger justify-content-center">
-                        <span class="text-danger fw-semibold fs-5"> View Profile </span>
-                        <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger"></span>
+                    <button onclick="window.location.href='<?php echo esc_url(get_the_permalink(get_the_ID()))?>'" class="align-items-center w-100 d-flex border border-2 gap-3 rounded-pill border-danger justify-content-center">
+                        <span class="text-danger fw-semibold fs-5 mb-1"> View Profile </span>
+                        <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger "></span>
                     </button>
                  </div>
              </div>

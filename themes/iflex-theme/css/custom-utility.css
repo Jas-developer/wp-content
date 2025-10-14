@@ -29,6 +29,24 @@
   .mt-lg-10 {
     margin-top: var(--spacing-10);
   }
+
+  /* margin bottom */
+  .mb-lg-6 {
+    margin-top: var(--spacing-6);
+  }
+  .mb-lg-7 {
+    margin-top: var(--spacing-7);
+  }
+  .mb-lg-8 {
+    margin-top: var(--spacing-8);
+  }
+  .mb-lg-9 {
+    margin-top: var(--spacing-9);
+  }
+
+  .mb-lg-10 {
+    margin-top: var(--spacing-10);
+  }
 }
 
 @media (min-width: 768px) {

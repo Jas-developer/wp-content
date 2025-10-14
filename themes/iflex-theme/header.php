@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header id="header-container" class="overflow-hidden">
+  <header id="header-container" class="overflow-hidden z-3">
   
    <div class="container overflow-hidden">
     <nav class="row align-items-center py-3 d-lg-fixed">
@@ -55,7 +55,7 @@
           echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFICATIONS</a>
         </li>
         <li><a href="<?php echo get_permalink(37)?>" 
-          class="<?php if(is_page(37)): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
+          class="<?php if(is_page(37) || is_singular( 'certified_trainers' )): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
         </li>
        <!-- show only if user is logged in  -->
         <?php if(is_user_logged_in()): ?> 
