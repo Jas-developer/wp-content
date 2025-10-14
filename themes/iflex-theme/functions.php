@@ -3,6 +3,27 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+
+/*  
+  - modify the enter title here post title
+*/
+function post_title_placeholder($title, $post){
+
+  if($post->post_type === 'certified_trainers'){
+    $title = "Enter Trainer Full Name";
+  }
+  
+  if($post->post_type === 'modules'){
+    $title = "Enter Module Title";
+  }
+
+  return $title;
+}
+
+
+add_filter( 'enter_title_here', 'post_title_placeholder', 10, 2 );
+
+
 /*
  Restrict users navigating to pages by url 
   - Modules is only available for logged in users / student
@@ -15,8 +36,6 @@ function restrict_url_navigation(){
    exit;
   endif;
 }
-
-
 
 add_action( 'template_redirect', 'restrict_url_navigation');
 /*
