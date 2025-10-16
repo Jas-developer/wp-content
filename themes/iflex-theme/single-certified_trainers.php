@@ -1,5 +1,5 @@
 <?php  if ( ! defined( 'ABSPATH' ) ) exit;  get_header(); ?>
-<main class="single-trainer-wrapper   mt-lg-10">
+<main class="single-trainer-wrapper  mt-lg-10">
   <!-- individual trainers -->
   <div class="container">
      <div class="row ">
@@ -16,17 +16,17 @@
            <?php $level = get_field('trainer_level');  if($level): echo esc_html( $level ); endif;?>
          </span>
          <!-- image -->
-          <div class="trainer-img-card w-100 overflow-hidden rounded shadow border border-3 border-dark position-relative ">
+          <div class="trainer-img-card w-100 overflow-hidden rounded  border border-1 border-dark position-relative ">
             <?php if($imageUrl = get_field('certified_trainer')): ?>
             <img 
-             class="trainer-img  shadow "
+             class="trainer-img "
              src="<?php echo esc_url( $imageUrl['url']); ?>" alt="<?php echo esc_html( get_the_title() ); ?>">
              <?php endif; ?>
           </div>
          <!-- Message or Quotes -->
           <div class="quotes-container">
              <?php if ( $quote = get_field('quote') ) : ?>
-               <blockquote class="fw-semibold fs-4 text-secondary">“ <?php echo esc_html( $quote ); ?> ”</blockquote>
+               <blockquote class="fw-semibold fs-5 text-secondary">“ <?php echo esc_html( $quote ); ?> ”</blockquote>
              <?php endif; ?>
           </div>
        </div>
@@ -57,4 +57,4 @@
      </div>
   </div>  
 </main>
-<?php get_footer();     
+<?php get_footer();        

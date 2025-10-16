@@ -1,6 +1,6 @@
 <?php  if ( ! defined( 'ABSPATH' ) ) exit; ?>
  <?php get_header(); ?>
- <main class="certified-trainer-wrapper mt-lg-9">
+ <main class="certified-trainer-wrapper  mt-lg-9 ">
   <div class="container">
     <!-- 
      - query the certified trainers
@@ -18,11 +18,35 @@
 
     $certified_trainers = new WP_Query($args);
     ?>
+
+    <!-- SEARCH CONTAINER & RESULT CONTAINER -->
+<div class="row position-relative z-2">
+  <!-- search input & btn -->
+  <div id="search-trainer-container"
+       class="d-flex flex-row gap-2 w-100 border-bottom border-1 justify-content-center align-items-center py-3">
+    <input id="search-trainer-input" type="text" placeholder="Search i.Flex Trainer" class="w-75 text-center rounded-pill px-3 py-2 ">
+    <button id="search-trainer-btn" class="rounded-pill px-4 btn btn-primary border border-0">SEARCH</button>
+  </div>
+
+  <!-- result container -->
+  <div id="result-trainer-container"
+       class="position-absolute top-100 d-none start-50 translate-middle-x mt-2 w-50 bg-light border rounded shadow-sm p-3 d-flex flex-column gap-2">
+    <!-- Example result items -->
+    <div class="p-2 border-bottom">Trainer 1</div>
+    <div class="p-2 border-bottom">Trainer 2</div>
+    <div class="p-2">Trainer 3</div>
+  </div>
+</div>
+
+
+     
+     <hr class="text-light">
+     <!-- certified trainer container  -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
       <!-- CERTIFIED TRAINERS CARD -->
          <?php if($certified_trainers->have_posts()):  ?>
             <?php while($certified_trainers->have_posts()): $certified_trainers->the_post(); ?>
-             <div class="certified-trainer-card rounded  d-flex shadow-lg gap-4 flex-column justify-content-center align-items-center px-lg-3 py-lg-4 ">
+             <div class="certified-trainer-card rounded  d-flex   border border-1 gap-4 z-1 flex-column justify-content-center align-items-center px-lg-3 py-lg-4 ">
                 <!-- trainer image  -->
                 <div class="trainer-img-card w-100 overflow-hidden position-relative ">
                    <?php $imageUrl = get_field('certified_trainer'); ?>
@@ -54,4 +78,4 @@
     </div>
   </div>
  </main>
-<?php get_footer(); ?>
+<?php get_footer(); ?> 

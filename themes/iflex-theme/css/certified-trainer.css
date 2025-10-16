@@ -5,3 +5,25 @@
   object-position: center;
   display: block;
 }
+
+/* search container */
+#search-trainer-container {
+  height: 100px;
+}
+
+#search-trainer-container > button,
+#search-trainer-container > input {
+  height: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-trainer-container > input:focus {
+  outline: none;
+}
+#search-trainer-container > input {
+  border: solid 1.5px rgb(220, 209, 209);
+}
+#search-trainer-container > button {
+  background-color: rgb(185, 27, 27);
+  color: aliceblue;
+}

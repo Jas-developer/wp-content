@@ -12,7 +12,8 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header id="header-container" class="overflow-hidden z-3">
+  <header id="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
+     ?>" class="overflow-hidden z-3">
   
    <div class="container overflow-hidden">
     <nav class="row align-items-center py-3 d-lg-fixed">
@@ -69,7 +70,7 @@
               bg-primary border shadow-md fw-semibold text-light py-2 shadow-sm  px-4 rounded-pill">
               EXAMS
             </button>
-            <button class="text-danger fw-bold cursor-pointer border border-0 bg-transparent" 
+            <button class="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'text-light'; else : echo 'text-danger'; endif;?> fw-bold cursor-pointer border border-0 bg-transparent" 
             onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
            </div> 
         <!-- show only if user is not logged in -->
