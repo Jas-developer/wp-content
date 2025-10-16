@@ -4,6 +4,9 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 
+
+
+
 /*  
   - modify the enter title here post title
 */
@@ -79,14 +82,29 @@ add_filter( "show_admin_bar", '__return_false' );
 
 // Enqueue Bootstrap CSS and JS
 function theme_enqueue_scripts() {
-    // Enqueue custom JS file
+ 
+ 
+  // Enqueue custom JS file
    wp_enqueue_script(
-    'iflex-index-js',
+    'iflex-js',
     get_theme_file_uri('build/main.js'), // Adjusted path to include the 'src' folder
     array(),
     filemtime(get_theme_file_path('build/main.js')),
     true
 );
+
+
+ /*
+* localize scripts 
+* access endpoints 
+*/ 
+
+ wp_localize_script( 'iflex-js', 'localizedData', array(
+    'nonce' => wp_create_nonce('wp_rest'),
+    'restUrl' => esc_url_raw( rest_url())
+ ));
+
+
 
 // custom css | main css
 wp_enqueue_style( 'iflex-main-css', get_theme_file_uri( "build/main.css" ), 

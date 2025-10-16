@@ -37,6 +37,8 @@ class SearchTrainer {
   //html
   liveSearchHTML() {
     console.log(this.userInputValue);
+    console.log(localizedData.restUrl);
+    console.log(localizedData.nonce);
   }
 
   resultHTML() {}

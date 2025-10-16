@@ -20,7 +20,7 @@
     ?>
 
     <!-- SEARCH CONTAINER & RESULT CONTAINER -->
-<div class="row position-relative z-2">
+<div class="row position-relative  z-2">
   <!-- search input & btn -->
   <div id="search-trainer-container"
        class="d-flex flex-row gap-2 w-100 border-bottom border-1 justify-content-center align-items-center py-3">
@@ -30,7 +30,7 @@
 
   <!-- result container -->
   <div id="result-trainer-container"
-       class="position-absolute top-100 d-none start-50 translate-middle-x mt-2 w-50 bg-light border rounded shadow-sm p-3 d-flex flex-column gap-2">
+       class="position-absolute top-100  start-50 translate-middle-x mt-2 w-50 bg-light border rounded shadow-sm p-3 d-flex flex-column gap-2">
     <!-- Example result items -->
     <div class="p-2 border-bottom">Trainer 1</div>
     <div class="p-2 border-bottom">Trainer 2</div>
