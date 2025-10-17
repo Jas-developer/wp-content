@@ -18,7 +18,7 @@ class SearchTrainer {
 
   searchTrainer(e) {
     this.userInputValue = e.target.value;
-    if (typeof this.typingTimerID === "number") {
+    if (typeof this.typingTimerID === "number" || this.userInputValue <= 2) {
       this.cancelLiveSearch();
       console.log("live search is canceled");
     }
@@ -31,13 +31,12 @@ class SearchTrainer {
 
     this.typingTimerID = setTimeout(() => {
       // request / query here
-      console.log("live search is triggered");
-      // display overlay
-      if (this.liveSearchOverlay.classList.contains("d-none")) {
-        this.liveSearchOverlay.classList.remove("d-none");
-      }
 
-      this.triggerSearch();
+      // display overlay
+
+      if (this.userInputValue.length >= 2) {
+        this.triggerSearch();
+      }
       this.typingTimerID = null;
     }, 2000);
   }
@@ -51,6 +50,10 @@ class SearchTrainer {
     // query or get request
     // store result response to a variable
     // pass neccessary results properties only to the live search html
+    console.log("live search is triggered");
+    if (this.liveSearchOverlay.classList.contains("d-none")) {
+      this.liveSearchOverlay.classList.remove("d-none");
+    }
 
     if (this.userInputValue.length > 0) this.liveSearchHTML();
   }
