@@ -2,14 +2,16 @@ class SearchTrainer {
   constructor() {
     // DOM properties / references
     this.searchSendBtn = document.querySelector("#search-trainer-btn");
-    this.userInputField = document.querySelector("#search-trainer-input");
+    this.userInputField = document.getElementById("search-trainer-input");
     this.liveSearchOverlay = document.querySelector(
       "#result-trainer-container"
     );
     // class properties
     this.typingTimerID;
     this.userInputValue;
-    this.init();
+    document.addEventListener("DOMContentLoaded", () => {
+      this.init();
+    });
   }
 
   init() {
@@ -18,7 +20,10 @@ class SearchTrainer {
 
   searchTrainer(e) {
     this.userInputValue = e.target.value;
-    if (typeof this.typingTimerID === "number" || this.userInputValue <= 2) {
+    if (
+      typeof this.typingTimerID === "number" ||
+      this.userInputValue.length <= 2
+    ) {
       this.cancelLiveSearch();
       console.log("live search is canceled");
     }
@@ -30,10 +35,6 @@ class SearchTrainer {
     }
 
     this.typingTimerID = setTimeout(() => {
-      // request / query here
-
-      // display overlay
-
       if (this.userInputValue.length >= 2) {
         this.triggerSearch();
       }
