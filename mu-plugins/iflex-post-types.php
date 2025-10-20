@@ -19,6 +19,7 @@ function iflex_post_types(){
       'with_front' => false,
     ],
     "public" => true,
+    "show_in_rest" => true
   ] );
 
 

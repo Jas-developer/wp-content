@@ -9,9 +9,7 @@ class SearchTrainer {
     // class properties
     this.typingTimerID;
     this.userInputValue;
-    document.addEventListener("DOMContentLoaded", () => {
-      this.init();
-    });
+    this.init();
   }
 
   init() {
@@ -39,7 +37,7 @@ class SearchTrainer {
         this.triggerSearch();
       }
       this.typingTimerID = null;
-    }, 2000);
+    }, 1300);
   }
 
   cancelLiveSearch() {
