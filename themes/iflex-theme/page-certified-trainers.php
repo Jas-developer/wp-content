@@ -39,16 +39,16 @@
      
      <hr class="text-light">
      <!-- certified trainer container  -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2">
       <!-- CERTIFIED TRAINERS CARD -->
          <?php if($certified_trainers->have_posts()):  ?>
             <?php while($certified_trainers->have_posts()): $certified_trainers->the_post(); ?>
-             <div class="certified-trainer-card rounded  d-flex   border border-1 gap-4 z-1 flex-column justify-content-center align-items-center px-lg-3 py-lg-4 ">
+             <div class="certified-trainer-card rounded   d-flex   border border-lg-1 border-0 gap-4 z-1 flex-column justify-content-center align-items-center px-1 py-2 px-lg-3 py-lg-4 ">
                 <!-- trainer image  -->
-                <div class="trainer-img-card w-100 overflow-hidden position-relative ">
+                <div class="trainer-img-card w-100 overflow-hidden position-relative border-bottom border-1 ">
                    <?php $imageUrl = get_field('certified_trainer'); ?>
                    <img 
-                    class="trainer-img rounded shadow "
+                    class="trainer-img rounded "
                     src="<?php echo $imageUrl['url'] ?>" alt="<?php echo get_the_title(); ?>">
                 </div>
                 <!-- text -content -->

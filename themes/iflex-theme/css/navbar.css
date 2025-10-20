@@ -41,7 +41,14 @@
   pointer-events: auto;
   height: 100vh;
 }
-
+.bg-leniar {
+  background: linear-gradient(
+    to top,
+    rgb(87, 4, 4) 0%,
+    rgba(150, 7, 7, 0.8) 70%,
+    rgba(224, 15, 15, 0) 100%
+  );
+}
 /* On large screens (lg and up), make it always visible and in a row */
 
 @media (min-width: 1024px) {
