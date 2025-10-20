@@ -1,3 +1,5 @@
+import axios from "axios";
+
 class SearchTrainer {
   constructor() {
     // DOM properties / references
@@ -7,6 +9,8 @@ class SearchTrainer {
       "#result-trainer-container"
     );
     // class properties
+    this.baseUrl = localizedData.restUrl;
+    this.nonce = localizedData.nonce;
     this.typingTimerID;
     this.userInputValue;
     this.init();
@@ -44,24 +48,33 @@ class SearchTrainer {
     clearTimeout(this.typingTimerID);
   }
 
-  triggerSearch() {
-    //define api
-    // query or get request
-    // store result response to a variable
-    // pass neccessary results properties only to the live search html
-    console.log("live search is triggered");
+  async triggerSearch() {
     if (this.liveSearchOverlay.classList.contains("d-none")) {
       this.liveSearchOverlay.classList.remove("d-none");
     }
 
-    if (this.userInputValue.length > 0) this.liveSearchHTML();
+    try {
+      const { data } = await axios.get(
+        `${this.baseUrl}iflex/v1/search-trainers`,
+        {
+          params: {
+            search: this.userInputValue.trim(),
+          },
+        }
+      );
+
+      if (data) {
+        this.liveSearchHTML(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
   //html
-  liveSearchHTML() {
+  liveSearchHTML(data) {
     // display html
     console.log(this.userInputValue);
-    console.log(localizedData.restUrl);
-    console.log(localizedData.nonce);
+    console.log(data);
   }
 
   resultHTML() {}
