@@ -2,21 +2,21 @@
 <main class="single-trainer-wrapper  mt-lg-10">
   <!-- individual trainers -->
   <div class="container">
-     <div class="row ">
+     <div class="row gap-5">
       <!-- #1 image, back to trainers container  -->
        <div class="col-12 col-lg-4 d-flex justify-content-start align-items-start flex-column gap-4 ">
         <!-- back to trainers container -->
         <button onclick="window.location.href='<?php echo esc_url( get_permalink(37)); ?>'"
-            class="d-flex border  border-0 flex-row bg-transparent justify-content-start border-bottom border-2 align-items-center gap-2">
-           <span class="dashicons dashicons-arrow-left-alt2 text-center fs-5 text-secondary fw-bold"></span>
-           <span class=" fw-semibold fs-4 text-secondary mb-1"> BACK TO TRAINERS </span>
+            class="d-flex border  border-0 flex-row bg-transparent justify-content-start border-bottom border-1 border-danger align-items-center gap-2">
+           <span class="dashicons dashicons-arrow-left-alt2 text-center fs-5 text-black fw-bold"></span>
+           <span class=" fw-semibold fs-4 text-danger mb-1"> BACK TO TRAINERS </span>
         </button>         
         <!-- level -->
          <span class="trainer-level mt-lg-5 text-light w-75  py-1 rounded px-1 text-center fw-bold fs-6 border border-1  bg-danger"> 
            <?php $level = get_field('trainer_level');  if($level): echo esc_html( $level ); endif;?>
          </span>
          <!-- image -->
-          <div class="trainer-img-card w-100 overflow-hidden rounded  border border-1 border-dark position-relative ">
+          <div class="trainer-img-card w-100 overflow-hidden rounded  border border-0 border-dark position-relative ">
             <?php if($imageUrl = get_field('certified_trainer')): ?>
             <img 
              class="trainer-img "
@@ -31,9 +31,9 @@
           </div>
        </div>
        <!-- #2 info container -->
-      <div class="col-12 col-lg-8  justify-content-start align-items-center ">
+      <div class="col-12 col-lg-7  justify-content-start align-items-center ">
          <!-- name -->
-          <h2 class="fw-bold fs-2  text-uppercase"><?php echo esc_html( get_the_title() ); ?></h2>
+          <h2 class="fw-bold fs-3 text-uppercase"><?php echo esc_html( get_the_title() ); ?></h2>
           <!-- address -->
            <div class="d-flex flex-column gap-1">
              <span class="fs-4 fw-bold text-secondary">Address</span>

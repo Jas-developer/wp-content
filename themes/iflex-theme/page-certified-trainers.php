@@ -31,10 +31,7 @@
   <!-- result container -->
   <div id="result-trainer-container"
        class="position-absolute top-100 d-none start-50 translate-middle-x mt-2 w-50 bg-light border rounded shadow-sm p-3 d-flex flex-column gap-2">
-    <!-- Example result items -->
-    <div class="p-2 border-bottom">Trainer 1</div>
-    <div class="p-2 border-bottom">Trainer 2</div>
-    <div class="p-2">Trainer 3</div>
+    <!-- results come here  -->
   </div>
 </div>
 
@@ -66,7 +63,7 @@
                  </div>
                  <!-- button content -->
                  <div class="view-profile-btn w-100 mt-2">
-                    <button onclick="window.location.href='<?php echo esc_url(get_the_permalink(get_the_ID()))?>'" class="align-items-center w-100 d-flex border border-2 gap-3 rounded-pill border-danger justify-content-center">
+                    <button onclick="window.location.href='<?php echo esc_url(get_the_permalink(get_the_ID()))?>'" class="align-items-center w-75 d-flex border border-2 gap-3 rounded-pill border-danger justify-content-center">
                         <span class="text-danger fw-semibold fs-5 mb-1"> View Profile </span>
                         <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger "></span>
                     </button>

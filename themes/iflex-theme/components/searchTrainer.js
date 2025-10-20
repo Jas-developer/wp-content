@@ -29,7 +29,7 @@ class SearchTrainer {
       this.cancelLiveSearch();
       console.log("live search is canceled");
     }
-    //  add overlay
+    // hide overlay if user input less / equal to 2 characters
     if (this.userInputValue.length <= 2) {
       if (!this.liveSearchOverlay.classList.contains("d-none")) {
         this.liveSearchOverlay.classList.add("d-none");
@@ -37,6 +37,7 @@ class SearchTrainer {
     }
 
     this.typingTimerID = setTimeout(() => {
+      //check again cause set time out will fire no matter what when id doesnt get reset
       if (this.userInputValue.length >= 2) {
         this.triggerSearch();
       }
@@ -48,7 +49,10 @@ class SearchTrainer {
     clearTimeout(this.typingTimerID);
   }
 
+  // request api / fetching data
   async triggerSearch() {
+    //show live results overlay
+    this.liveSearchOverlay.innerHTML = `<p>Searching..</p>`;
     if (this.liveSearchOverlay.classList.contains("d-none")) {
       this.liveSearchOverlay.classList.remove("d-none");
     }
@@ -63,23 +67,35 @@ class SearchTrainer {
         }
       );
 
-      if (data) {
+      if (data.data && data.data.length >= 1) {
         this.liveSearchHTML(data);
+      } else {
+        this.liveSearchOverlay.innerHTML = `<p> No trainer found </p>`;
       }
     } catch (error) {
       console.log(error);
     }
   }
-  //html
+  // display live result html overlay
   liveSearchHTML(data) {
-    // display html
-    console.log(this.userInputValue);
-    console.log(data);
+    const trainers = data.data;
+    const html = trainers
+      .map((trainer) => {
+        return `<div>
+                  <a href="${trainer.permalink}" class="text-danger">${trainer.name}</a>
+                  <p>${trainer.message}</p>
+                  <hr class="fw-bold"/>
+               </div>`;
+      })
+      .join("");
+
+    this.liveSearchOverlay.innerHTML = html;
   }
 
-  resultHTML() {}
-
-  clearOverlayHTML() {}
+  // display all relevant trainers
+  resultHTML() {
+    // all relevent trainers goes here
+  }
 }
 
 export default SearchTrainer;
