@@ -9,11 +9,15 @@
      - add search results 
     -->
     <?php
+     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+     if (get_query_var('page')) $paged = get_query_var('page');
+
      $args = array(
         'post_type' => 'certified_trainers',
         'posts_per_page' => 10,
         'orderby' => 'date',
-        'order' => 'DESC'
+        'order' => 'DESC',
+        'paged' => $paged
      );
 
     $certified_trainers = new WP_Query($args);
@@ -28,18 +32,15 @@
     <button id="search-trainer-btn" class="rounded-pill px-4 btn btn-primary border border-0">SEARCH</button>
   </div>
 
-  <!-- result container -->
+  <!-- live result container -->
   <div id="result-trainer-container"
        class="position-absolute top-100 d-none start-50 translate-middle-x mt-2 w-50 bg-light border rounded shadow-sm p-3 d-flex flex-column gap-2">
     <!-- results come here  -->
   </div>
 </div>
 
-
-     
      <hr class="text-light">
      <!-- certified trainer container  -->
-   
     <div id='trainers-container' class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2">
       <!-- CERTIFIED TRAINERS CARD -->
          <?php if($certified_trainers->have_posts()):  ?>
@@ -71,6 +72,24 @@
                  </div>
              </div>
             <?php endwhile; ?>    
+           <!-- pagination links goes here  -->
+          <div class="bg-success z-5">
+            <?php 
+            
+            
+           echo paginate_links(array(
+              'total'   => $certified_trainers->max_num_pages,
+              'current' => max(1, $paged),
+              'prev_text' => '&laquo;',
+              'next_text' => '&raquo;',
+            ));
+   
+            
+            ?>
+
+         
+
+          </div>
          <?php wp_reset_postdata(); endif;?>
        <!-- END | CERT TRAINER CARDS -->
     </div>

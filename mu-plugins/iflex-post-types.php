@@ -18,8 +18,7 @@ function iflex_post_types(){
       'slug' => 'trainers',
       'with_front' => false,
     ],
-    "public" => true,
-    "show_in_rest" => true
+    "public" => true
   ] );
 
 
