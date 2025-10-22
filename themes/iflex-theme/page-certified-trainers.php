@@ -14,7 +14,7 @@
     // Custom query for certified trainers
     $args = array(
       'post_type'      => 'certified_trainers',
-      'posts_per_page' => 10,
+      'posts_per_page' => 8,
       'orderby'        => 'date',
       'order'          => 'DESC',
       'paged'          => $paged

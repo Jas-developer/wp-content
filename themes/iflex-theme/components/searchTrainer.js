@@ -44,6 +44,12 @@ class SearchTrainer {
         this.liveSearchOverlay.classList.add("d-none");
       }
     }
+
+    if (this.onResultsPage) {
+      if (!this.liveSearchOverlay.classList.contains("d-none")) {
+        this.liveSearchOverlay.classList.add("d-none");
+      }
+    }
     //reset set time out if user still typing
     if (
       typeof this.typingTimerID === "number" ||

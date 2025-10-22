@@ -12,7 +12,12 @@ class Pagination {
       "list-unstyled",
       "d-flex",
       "flex-row",
-      "gap-3"
+      "gap-3",
+      "border-top",
+      "border-2",
+      "border-dark",
+      "px-2",
+      "py-5"
     );
     // page numbers
     if (!this.pageNumbers) return;
@@ -34,16 +39,57 @@ class Pagination {
   }
 
   prev(prev) {
-    console.log(prev);
+    prev.classList.add(
+      "text-danger",
+      "text-decoration-none",
+      "shadow",
+      "fs-2",
+      "border",
+      "border-2",
+      "border-success",
+      "d-flex",
+      "justify-content-center",
+      "align-items-center",
+      "py-1",
+      "rounded-pill",
+      "px-2"
+    );
+    prev.innerHTML = `<span class="dashicons dashicons-arrow-left"></span>`;
   }
 
   next(next) {
-    next.classList.add("text-danger");
     console.log(next);
+    next.classList.add(
+      "text-danger",
+      "text-decoration-none",
+      "shadow",
+      "fs-2",
+      "border",
+      "border-2",
+      "border-danger",
+      "d-flex",
+      "justify-content-center",
+      "align-items-center",
+      "py-1",
+      "rounded-pill",
+      "px-2"
+    );
+    next.innerHTML = `<span class="dashicons dashicons-arrow-right"></span>`;
   }
 
   current(current) {
-    console.log(current);
+    current.classList.add(
+      "bg-danger",
+      "text-light",
+      "fs-4",
+      "rounded-pill",
+      "px-2",
+      "py-2",
+      "shadow",
+      "border",
+      "border-2",
+      "border-dark"
+    );
   }
 }
 
