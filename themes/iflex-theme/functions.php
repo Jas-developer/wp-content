@@ -3,9 +3,14 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-
-
-
+function iflex_trainer_pagination_fix() {
+  add_rewrite_rule(
+    '^certified-trainers/page/([0-9]+)/?',
+    'index.php?pagename=certified-trainers&paged=$matches[1]',
+    'top'
+  );
+}
+add_action('init', 'iflex_trainer_pagination_fix');
 
 /*  
   - modify the enter title here post title
