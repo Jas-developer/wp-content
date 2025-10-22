@@ -14,14 +14,14 @@
       <br>
       <span class="text-danger">FOR GREATNESS</span>
     </h1>
-  </div>
+  </div> 
 
   <div class="divider-container position-relative">
   </div>
 </section>
 
 <!-- SECOND SECTION -->
-
+ 
 <!-- floating info -->
 <div class="floating-info-container container-fluid position-relative">
   <!-- small screen -->

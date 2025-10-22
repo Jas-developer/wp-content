@@ -39,7 +39,8 @@
      
      <hr class="text-light">
      <!-- certified trainer container  -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2">
+   
+    <div id='trainers-container' class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2">
       <!-- CERTIFIED TRAINERS CARD -->
          <?php if($certified_trainers->have_posts()):  ?>
             <?php while($certified_trainers->have_posts()): $certified_trainers->the_post(); ?>
