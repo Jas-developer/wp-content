@@ -13,9 +13,6 @@ class Pagination {
       "d-flex",
       "flex-row",
       "gap-3",
-      "border-top",
-      "border-2",
-      "border-dark",
       "px-2",
       "py-5"
     );
@@ -40,13 +37,14 @@ class Pagination {
 
   prev(prev) {
     prev.classList.add(
-      "text-danger",
+      "text-light",
       "text-decoration-none",
       "shadow",
       "fs-2",
       "border",
       "border-2",
-      "border-success",
+      "border-dark",
+      "bg-danger",
       "d-flex",
       "justify-content-center",
       "align-items-center",
@@ -60,13 +58,14 @@ class Pagination {
   next(next) {
     console.log(next);
     next.classList.add(
-      "text-danger",
+      "text-white",
       "text-decoration-none",
+      "bg-danger",
       "shadow",
       "fs-2",
       "border",
       "border-2",
-      "border-danger",
+      "border-white",
       "d-flex",
       "justify-content-center",
       "align-items-center",
@@ -79,7 +78,7 @@ class Pagination {
 
   current(current) {
     current.classList.add(
-      "bg-danger",
+      "bg-dark",
       "text-light",
       "fs-4",
       "rounded-pill",

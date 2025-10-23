@@ -2,15 +2,26 @@
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
+require_once get_template_directory().'/inc/trainer-fields.php';
 
-function iflex_trainer_pagination_fix() {
+function iflex_customization() {
+  
+  add_role( 'trainer', 'Trainer', array(
+    'read' => true,
+    'edit_posts' => false,
+    'delete_posts' =>  false,
+    'upload_files' => false,
+    'list_users' => false
+  ) );
+
+
   add_rewrite_rule(
     '^certified-trainers/page/([0-9]+)/?',
     'index.php?pagename=certified-trainers&paged=$matches[1]',
     'top'
   );
 }
-add_action('init', 'iflex_trainer_pagination_fix');
+add_action('init', 'iflex_customization');
 
 /*  
   - modify the enter title here post title

@@ -132,12 +132,12 @@ class SearchTrainer {
                       class="trainer-img rounded "
                       src="${trainer.imageUrl}" alt="${trainer.name}">
                   </div>
-                  <!-- text -content -->
+                  <!-- text -content --> 
                   <div class="d-flex gap-2 flex-column w-100">
                       <span 
                       class="trainer-level text-light w-75  py-1 rounded px-1 text-center fw-bold fs-6 border border-1  bg-danger"
                       > 
-                      
+                      ${trainer.level}
                       </span>
                       <span class="trainer-name fs-4 text-dark fw-bold">${trainer.name}</span>
                       <span class="trainer-address fs-6 text-secondary">${trainer.address}</span>
