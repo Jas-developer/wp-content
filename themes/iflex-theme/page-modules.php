@@ -10,37 +10,40 @@
   ];
 
   $module_query = new WP_Query($args);
+   
+  if($module_query->have_posts()){
+    
+    while($module_query->have_posts()){
+          $module_query->the_post();
+          //check if the current_user trainer level has available modules
+          $user_level = get_user_meta( get_current_user_id(), 'trainer_level', true );
+          $module_level = get_field('trainer_level_modules', get_the_ID());
+          
+        // if the trainer level exist or user level AND aren't admin
+         if($user_level && $module_level && !current_user_can('manage_options')){
+           if(is_array($module_level)){
+              if(in_array($user_level, $module_level)){ ?>
+                <p>Trainer Modules Availeble - Array</p>
+              <?php }
+           }else{
+              if($module_level == $user_level){ ?>
+                 <p>Trainer Modules Available - Single</p>
+             <?php }
+           }
+ 
+         } elseif(current_user_can('manage_options')){ ?>
+          // render all modules if current user is admin
+          <p>You are an admin - Admin </p>
+         <?php } else { ?>
+           <p>No modules available </p>
+         <?php }
+
+     }
+  }
+
+
+
   ?>
-
-  <?php if ($module_query->have_posts()) : ?>
-    <div class="row g-3 border-1 mt-lg-5">
-      <?php while ($module_query->have_posts()) : $module_query->the_post(); ?>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded p-3 bg-white h-100">
-            <?php $image = get_field('thumbnail'); ?>
-            <?php if ($image) : ?>
-              <img src="<?php echo esc_url($image['url']); ?>" alt="" class="img-fluid mb-3 rounded">
-            <?php endif; ?>
-
-            <h5 class="mb-2 text-dark"><?php the_title(); ?></h5>
-            <p class="text-muted small mb-3"><?php echo wp_trim_words(get_the_content(), 20); ?></p>
-
-            <?php $file = get_field('iflex_modules'); ?>
-            <?php if ($file) : ?>
-              <div class="d-flex gap-2">
-                <a href="<?php echo esc_url($file['url']); ?>" class="btn btn-outline-secondary btn-sm">View</a>
-                <a href="<?php echo esc_url($file['url']); ?>" download class="btn btn-primary btn-sm">Download</a>
-              </div>
-            <?php endif; ?>
-          </div>
-        </div>
-      <?php endwhile; ?>
-    </div>
-  <?php else : ?>
-    <div class="text-center py-5">
-      <p class="text-muted">No modules available.</p>
-    </div>
-  <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>

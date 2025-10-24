@@ -109,7 +109,6 @@ function theme_enqueue_scripts() {
     true
 );
 
-
  /*
 * localize scripts 
 * access endpoints 

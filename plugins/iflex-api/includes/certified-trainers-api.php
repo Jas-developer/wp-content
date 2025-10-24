@@ -46,7 +46,8 @@ function search_trainers($request) {
         'imageUrl' => get_field('certified_trainer', $post->ID)['url'],
         'permalink' => get_permalink( $post->ID ),
         'address' => get_field('trainer_address', $post->ID),
-        'description' => $post->post_content
+        'description' => $post->post_content,
+        'level' => get_field('trainer_level', $post->ID)
       ];
     }
 
