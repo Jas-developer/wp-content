@@ -12,13 +12,14 @@
         
         <!-- back to trainers container -->
         <button 
-          onclick="window.location.href='<?php echo esc_url( get_permalink(37)); ?>'"
+          onclick="history.back()"
           class="d-flex border border-0 flex-row bg-transparent justify-content-start border-bottom border-1 border-danger align-items-center gap-2"
         >
           <span class="dashicons dashicons-arrow-left-alt2 text-center fs-5 text-black fw-bold"></span>
           <span class="fw-semibold fs-4 text-danger mb-1"> BACK TO TRAINERS </span>
         </button>         
-
+        <span>
+        </span>
         <!-- trainer level -->
         <span class="trainer-level mt-lg-5 text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger"> 
           <?php 

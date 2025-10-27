@@ -11,6 +11,10 @@
   --spacing-10: 10rem;
 }
 
+.mt-8 {
+  margin-top: var(--spacing-8);
+}
+
 @media (min-width: 1023px) {
   /* margin top */
   .mt-lg-6 {

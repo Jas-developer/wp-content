@@ -9,10 +9,10 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
   <?php wp_body_open(); ?>
-
-  <header id="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
+   
+  <header id="<?php if(is_page(37) || is_singular( 'certified_trainers' ) || is_page(16) || is_page(35)) : echo 'header-container-v2'; else: echo 'header-container'; endif;
      ?>" class="overflow-hidden z-3">
   
    <div class="container overflow-hidden">
@@ -67,7 +67,7 @@
             <button id="login-button" 
               onclick="window.location.href='<?php echo get_permalink(39) ?>'"
               class="<?php if(is_page(39)): echo 'border-2'; else: echo 'border-0'; endif; ?> 
-              bg-primary border shadow-md fw-semibold text-light py-2 shadow-sm  px-4 rounded-pill">
+              bg-danger border shadow-md fw-semibold text-light py-2 shadow-sm  px-5 rounded-pill">
               EXAMS
             </button>
             <button class="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'text-light'; else : echo 'text-danger'; endif;?> fw-bold cursor-pointer border border-0 bg-transparent" 

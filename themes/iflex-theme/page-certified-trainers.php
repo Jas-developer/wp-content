@@ -41,47 +41,49 @@
     <hr class="text-light">
 
     <!-- Certified trainers grid -->
-    <div id="trainers-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2">
-
+    <div id="trainers-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
       <?php if ( $certified_trainers->have_posts() ) { ?>
 
         <?php while ( $certified_trainers->have_posts() ) {
-          $certified_trainers->the_post(); 
-        ?>
-          <div class="certified-trainer-card rounded d-flex border border-lg-1 border-0 gap-4 z-1 flex-column justify-content-center align-items-center px-1 py-2 px-lg-3 py-lg-4">
+          $certified_trainers->the_post(); ?>
+          
+          <div class="col">
+            <div onclick="window.location.href='<?php echo esc_url(get_the_permalink()) ?>'"
+                 style="cursor:pointer;"
+             class="certified-trainer-card w-100 rounded-pill  border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1 py-2 px-lg-3 py-lg-5 gap-4">
 
-            <!-- Trainer image -->
-            <div class="trainer-img-card w-100 overflow-hidden position-relative border-bottom border-1">
-              <?php $imageUrl = get_field('certified_trainer'); ?>
-              <img class="trainer-img rounded"
-                   src="<?php echo esc_url($imageUrl['url']); ?>"
-                   alt="<?php echo esc_attr(get_the_title()); ?>">
+              <!-- Trainer image -->
+              <div class="rounded-pill overflow-hidden position-relative border-bottom border-1 w-100">
+                <?php $imageUrl = get_field('certified_trainer'); ?>
+                <img class="trainer-img rounded w-100"
+                     src="<?php echo esc_url($imageUrl['url']); ?>"
+                     alt="<?php echo esc_attr(get_the_title()); ?>">
+              </div>
+
+              <!-- Trainer content -->
+              <div class="d-flex flex-column gap-1 w-100 justify-content-enter align-items-center">
+                <span class="trainer-level text-light px-2 py-1 rounded-pill px-4 text-center fw-bold fs-6 border border-0 shadow bg-danger">
+                  <?php echo esc_html(get_field('trainer_level')); ?>
+                </span>
+                <span class="trainer-name fs-4 text-dark fw-bold"><?php the_title(); ?></span>
+                <span class="trainer-address fs-6 text-secondary">
+                  <?php echo esc_html(get_field('trainer_address')); ?>
+                </span>
+                <!-- button -->
+               <button onclick="window.location.href='<?php echo esc_url(get_permalink()); ?>'"
+                       class="d-flex bg-transparent align-items-center gap-2 w-50 justify-content-center"
+                       style="border: none; border-bottom: 2px solid #dc3545;">
+                       <span class="text-danger fw-semibold mb-1">SEE MORE</span>
+                       <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger"></span>
+               </button>
+
+              </div>
+
             </div>
-
-            <!-- Trainer content -->
-            <div class="d-flex gap-2 flex-column w-100">
-              <span class="trainer-level text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger">
-                <?php echo esc_html(get_field('trainer_level')); ?>
-              </span>
-              <span class="trainer-name fs-4 text-dark fw-bold"><?php the_title(); ?></span>
-              <span class="trainer-address fs-6 text-secondary">
-                <?php echo esc_html(get_field('trainer_address')); ?>
-              </span>
-            </div>
-
-            <!-- View profile button -->
-            <div class="view-profile-btn w-100 mt-2">
-              <button onclick="window.location.href='<?php echo esc_url(get_permalink()); ?>'"
-                      class="align-items-center w-75 d-flex border border-2 gap-3 rounded-pill border-danger justify-content-center">
-                <span class="text-danger fw-semibold fs-5 mb-1">View Profile</span>
-                <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger"></span>
-              </button>
-            </div>
-
           </div>
+
         <?php } // end while ?>
 
-       
         <?php wp_reset_postdata(); ?>
 
       <?php } else { ?>
@@ -92,19 +94,19 @@
       <?php } ?>
 
     </div><!-- END trainers container -->
-     <!-- Pagination -->
-        <div class="pagination-wrapper mt-4 w-100 d-flex justify-content-center align-items-center">
-          <?php
-          echo paginate_links(array(
-            'total'     => $certified_trainers->max_num_pages,
-            'current'   => max(1, $paged),
-            'prev_text' => '&laquo;',
-            'next_text' => '&raquo;',
-            'type'      => 'list',
-          ));
-          ?>
-        </div>
 
+    <!-- Pagination -->
+    <div class="pagination-wrapper mt-4 w-100 d-flex justify-content-center align-items-center">
+      <?php
+      echo paginate_links(array(
+        'total'     => $certified_trainers->max_num_pages,
+        'current'   => max(1, $paged),
+        'prev_text' => '&laquo;',
+        'next_text' => '&raquo;',
+        'type'      => 'list',
+      ));
+      ?>
+    </div>
 
   </div><!-- END container -->
 </main>
