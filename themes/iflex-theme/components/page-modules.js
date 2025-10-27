@@ -15,12 +15,9 @@ class DownloadManager {
 
   handleDownload(e) {
     //prevent default
-
     const button = e.currentTarget;
     const fileUrl = button.dataset.file;
-    console.log(fileUrl);
     const fileName = button.dataset.filename || "download";
-    console.log(fileName);
 
     this.fetchDownload(fileUrl, fileName);
   }

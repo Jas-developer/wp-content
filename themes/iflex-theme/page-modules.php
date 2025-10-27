@@ -43,7 +43,7 @@
       if ($show_module) {
         ?>
         <div class="col">
-          <div id="module-card" class="border d-flex flex-column align-items-start justify-content-end rounded shadow h-100 bg-white">
+          <div id="module-card" class=" d-flex flex-column w-100 align-items-start justify-content-end rounded shadow h-100 bg-white">
             <div class="img-container">
               <?php 
               if ($thumbnail && isset($thumbnail['url'])) { 
@@ -65,7 +65,7 @@
              </div>
              <!-- buttons -->
               <div class="buttons p-2">
-                 <button>VIEW MODULE</button>
+                 <button onclick="window.location.href='<?php echo esc_url( $module_file) ?>'">VIEW MODULE</button>
                  <button 
                   data-file='<?php echo $module_file ? esc_url( $module_file) : ''; ?>' 
                   data-filename ='download'
