@@ -1,11 +1,19 @@
 .trainer-img {
-  width: 100%;
-  height: 300px;
+  width: 85%;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   display: block;
 }
-
+@media (min-width: 1023px) {
+  .trainer-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
 /* search container */
 #search-trainer-container {
   height: 100px;

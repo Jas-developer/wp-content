@@ -13,15 +13,15 @@
         <!-- back to trainers container -->
         <button 
           onclick="history.back()"
-          class="d-flex border border-0 flex-row bg-transparent justify-content-start border-bottom border-1 border-danger align-items-center gap-2"
+          class="d-flex border border-0 d-none d-md-flex  flex-row bg-transparent justify-content-start border-bottom border-2 border-danger align-items-center gap-2"
         >
-          <span class="dashicons dashicons-arrow-left-alt2 text-center fs-5 text-black fw-bold"></span>
-          <span class="fw-semibold fs-4 text-danger mb-1"> BACK TO TRAINERS </span>
+          <span class="dashicons dashicons-arrow-left-alt2 text-center fs-5 text-danger fw-bold"></span>
+          <span class="fw-semibold fs-5 text-danger mb-1"> BACK</span>
         </button>         
         <span>
         </span>
         <!-- trainer level -->
-        <span class="trainer-level mt-lg-5 text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger"> 
+        <span class="trainer-level mt-lg-5 rounded-pill shadow text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger"> 
           <?php 
             
             $level = get_field('trainer_level');  
@@ -57,12 +57,14 @@
       <div class="col-12 col-lg-7 justify-content-start align-items-center">
 
         <!-- trainer name -->
-        <h2 class="fw-bold fs-3 text-uppercase text-dark">
+        <h2 class="fw-semibold fs-4 text-uppercase text-light bg-success shadow py-1 px-3">
           <?php echo esc_html(get_the_title()); ?>
         </h2>
-        <hr>   
-        <!-- address  -->
-        <div class="d-flex flex-column gap-1">
+       
+      
+        <div class="d-flex flex-row justify-content-start align-items-center gap-5">
+           <!-- address  -->
+        <div class="d-flex flex-column justify-content-center align-items-start gap-1">
           <span class="fs-4 fw-semibold  text-dark">Address</span>
           <span class="fs-5 text-dark fw-normal">
             <?php 
@@ -75,7 +77,7 @@
         </div>
 
         <!-- contact  -->
-        <div class="d-flex flex-column gap-1 mt-lg-3">
+        <div class="d-flex flex-column gap-1 ">
           <span class="fs-4 fw-semibold text-dark">Contacts</span>
           <span class="fs-5 text-dark">
             <?php 
@@ -85,6 +87,7 @@
               endif; 
             ?>
           </span>
+        </div>
         </div>
 
         <hr> 

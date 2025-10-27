@@ -45,23 +45,23 @@
       <?php if ( $certified_trainers->have_posts() ) { ?>
 
         <?php while ( $certified_trainers->have_posts() ) {
-          $certified_trainers->the_post(); ?>
+          $certified_trainers->the_post(); ?> 
           
           <div class="col">
             <div onclick="window.location.href='<?php echo esc_url(get_the_permalink()) ?>'"
                  style="cursor:pointer;"
-             class="certified-trainer-card w-100 rounded-pill  border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1 py-2 px-lg-3 py-lg-5 gap-4">
+             class="certified-trainer-card w-100  h-100 border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1 py-2 px-lg-3  py-5 py-lg-5 gap-4">
 
               <!-- Trainer image -->
-              <div class="rounded-pill overflow-hidden position-relative border-bottom border-1 w-100">
+              <div class="rounded-pill overflow-hidden shadow position-relative border-bottom border-1 w-75">
                 <?php $imageUrl = get_field('certified_trainer'); ?>
-                <img class="trainer-img rounded w-100"
+                <img class="trainer-img rounded w-100 "
                      src="<?php echo esc_url($imageUrl['url']); ?>"
                      alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
 
               <!-- Trainer content -->
-              <div class="d-flex flex-column gap-1 w-100 justify-content-enter align-items-center">
+              <div class="d-flex flex-column gap-1 w-100 justify-content-center align-items-center  ">
                 <span class="trainer-level text-light px-2 py-1 rounded-pill px-4 text-center fw-bold fs-6 border border-0 shadow bg-danger">
                   <?php echo esc_html(get_field('trainer_level')); ?>
                 </span>
