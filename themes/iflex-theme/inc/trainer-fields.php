@@ -20,7 +20,7 @@ function iflex_trainer_level($user){ ?>
             <select name="trainer_level" id="trainer_level">
                 <?php 
                 
-                  $levels = array('Level 1 - Functional','Level 2 - Advanced','Level 3 - Expert');
+                  $levels = array('Level 1 - Functional','Level 2 - Advanced','Level 3 - Expert', 'In progress');
                   $saved_level = ($user) ? get_user_meta( $user->ID, 'trainer_level', true ) : '';
 
                   foreach($levels as $level){ ?>

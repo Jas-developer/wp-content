@@ -3,6 +3,27 @@
 
 function iflex_post_types(){
 
+
+  //exams for trainers 
+    register_post_type( 'exams', array(
+        "labels" => array(
+          'name' => 'Trainers Exam',
+          'singular_name' => 'Exam',
+          'add_new_item' => 'Add new Exam',
+          'name_admin_bar' => 'Exam',
+          'edit_item' => 'Edit Exam',
+          'view_item' => 'View Exam',
+          'all_items' => 'All Exams'
+        ),
+        'show_ui' => true,
+        'public' => true,
+        'supports' => array('title','editor'),
+        "rewrite" => array(
+          'slug' => 'trainer-exams',
+          'with_front' => false
+        )
+    ));
+ 
   // certified trainers of i.Flex fitness 
   register_post_type( 'certified_trainers', [
     "labels" => [
