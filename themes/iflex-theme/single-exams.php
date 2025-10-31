@@ -1,9 +1,13 @@
-<?php get_header(); ?>
-   
-<div class="mt-lg-10">
-  <h1>
-    Individual exams go here
-  </h1>
-</div> 
 
+<?php if ( ! defined( 'ABSPATH' ) ) exit;  get_header(); ?>
+  <div class="container mt-lg-10">
+     <div class="d-flex justify-content-center align-items-center">
+       <!-- shorcodes will go here  -->
+        <div class="p-4 rounded shadow">
+          <?php echo do_shortcode(get_the_content()) ?>
+        </div>
+     </div>
+  </div>
 <?php get_footer();
+
+
