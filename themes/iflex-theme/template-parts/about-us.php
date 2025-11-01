@@ -1,8 +1,8 @@
 <div class="container w-100 justify-content-center align-items-center">
     <div class="row gap-md-0 gap-3">
-        <div class="col-12  col-md-6 d-flex position-relative overflow-hidden justify-content-center align-items-center">
-             <img  class="object-fit-contain rounded-1 d-block mx-auto w-100"
-             src="<?php echo get_theme_file_uri( '/assets/images/marco.png' ) ?>" alt="Marco Antonio Tamayo, i.Flex Fitness Founder">
+        <div class="col-12  col-md-6 d-flex position-relative overflow-hidden justify-content-end  align-items-center">
+             <img style=" height:450px;" class="object-fit-contain  shadow  rounded-1 d-block "
+             src="<?php echo get_theme_file_uri( '/assets/images/Marco-Antonio-Tamayo.webp' ) ?>" alt="Marco Antonio Tamayo, i.Flex Fitness Founder">
         </div>
         <div class="col-12  col-md-6 d-flex flex-column gap-lg-2 gap-1 justify-content-center align-items-center">
             <div class="w-100 d-flex justify-content-center align-items-start border-start border-4 px-1 px-md-2 border-danger">
