@@ -1,14 +1,14 @@
 <div class="container w-100 justify-content-center align-items-center">
     <div class="row gap-md-0 gap-3">
         <div class="col-12  col-md-6 d-flex position-relative overflow-hidden justify-content-end  align-items-center">
-             <img style=" height:450px;" class="object-fit-contain  shadow  rounded-1 d-block "
+             <img width="450" height="450"
              src="<?php echo get_theme_file_uri( '/assets/images/Marco-Antonio-Tamayo.webp' ) ?>" alt="Marco Antonio Tamayo, i.Flex Fitness Founder">
         </div>
         <div class="col-12  col-md-6 d-flex flex-column gap-lg-2 gap-1 justify-content-center align-items-center">
             <div class="w-100 d-flex justify-content-center align-items-start border-start border-4 px-1 px-md-2 border-danger">
-             <h2 class="fw-bold fs-1 text-start">
+             <h3 class="fw-bold fs-1 text-start">
                BE A CERTIFIED FITNESS TRAINER
-             </h2>
+             </h3>
              </div>
             <div  class="w-100 d-flex flex-column justify-content-center align-items-start">
                <p>
@@ -18,9 +18,9 @@
                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="btn-container w-100 ">
-                <button class="bg-danger scale-btn-hover border-0 border px-4 px-md-5 py-2 text-light ">
+                <a href='<?php echo esc_url(get_permalink(35)) ?>' class="bg-danger text-decoration-none scale-btn-hover rounded-pill border-0 border px-4 px-md-5 py-2 text-light ">
                     JOIN NOW
-                </button>
+                </a>
             </div>
         </div>
     </div>
