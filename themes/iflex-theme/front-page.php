@@ -19,7 +19,7 @@
           class="position-relative"
           style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"
         >
-          TRAINING | LIVE TEST TRAINING things
+          TRAINING | STAGING
         </h2>
 
         <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 fs-1 fw-bold text-danger">
