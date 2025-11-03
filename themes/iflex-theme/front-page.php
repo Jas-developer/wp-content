@@ -59,7 +59,7 @@
   <!-- ==========================
        ABOUT US SECTION
   =========================== -->
-  <div class="about-us-container mt-n1 w-100 position-relative z-1">
+  <div class="about-us-container mt-n1 pt-md-5 pt-0 pt-lg-0 w-100 position-relative z-1">
     <?php get_template_part( 'template-parts/about', 'us' ); ?>
   </div>
 
