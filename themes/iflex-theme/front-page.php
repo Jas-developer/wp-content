@@ -30,7 +30,7 @@
 
       <br>
 
-      <h3 class="for-greatness text-danger fs-1 fw-bold">
+      <h3 class="for-greatness text-danger fs-lg-1 fs-md-2 fs-3  fw-bold">
         GROUND FOR GREATNESS
       </h3>
 
@@ -44,7 +44,7 @@
   <div class="floating-info-container container-fluid position-relative">
 
     <!-- Small screen -->
-    <div class="rounded position-relative d-block d-md-none justify-content-center align-items-center px-3 py-3 py-lg-5 shadow-lg w-75 container">
+    <div class="rounded bg-white position-relative d-block d-md-none justify-content-center align-items-center px-3 py-3 py-lg-5 shadow-lg w-100 container">
       <?php get_template_part( 'template-parts/floating', 'info' ); ?>
     </div>
 
@@ -59,7 +59,7 @@
   <!-- ==========================
        ABOUT US SECTION
   =========================== -->
-  <div class="about-us-container w-100 position-relative z-1">
+  <div class="about-us-container mt-n1 w-100 position-relative z-1">
     <?php get_template_part( 'template-parts/about', 'us' ); ?>
   </div>
 
