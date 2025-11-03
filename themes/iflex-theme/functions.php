@@ -136,9 +136,9 @@ array(), filemtime(get_theme_file_path( "build/main.css" )) );
     // Theme stylesheet (loads after Bootstrap so you can override styles)
     wp_enqueue_style(
     'theme-style',
-    get_stylesheet_directory_uri() . '/styless.css', // URL for browser
+    get_stylesheet_directory_uri() . '/style.css', // URL for browser
     array('bootstrap-css'),
-    filemtime( get_stylesheet_directory() . '/styless.css' ) // version
+    filemtime( get_stylesheet_directory() . '/style.css' ) // version
       );
 
 
