@@ -135,11 +135,12 @@ array(), filemtime(get_theme_file_path( "build/main.css" )) );
 
     // Theme stylesheet (loads after Bootstrap so you can override styles)
     wp_enqueue_style(
-        'theme-style',
-        get_stylesheet_uri(),
-        array('bootstrap-css'),
-        wp_get_theme()->get('Version')
-    );
+    'theme-style',
+    get_stylesheet_directory_uri() . '/styless.css', // URL for browser
+    array('bootstrap-css'),
+    filemtime( get_stylesheet_directory() . '/styless.css' ) // version
+      );
+
 
     // Bootstrap JS (bundle includes Popper)
     wp_enqueue_script(
