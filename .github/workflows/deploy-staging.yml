@@ -1,0 +1,41 @@
+name: Publish Website
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  web-deploy:
+    name: 🚀 Deploy Website Every Commit
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repo first
+      - name: 🚚 Get Latest Code
+        uses: actions/checkout@v3
+
+      # Setup Node
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22.19.0"
+
+      # Install dependencies in theme
+      - name: Install Dependencies
+        working-directory: themes/iflex-theme
+        run: npm install
+
+      # Build theme
+      - name: Build Theme
+        working-directory: themes/iflex-theme
+        run: npm run build
+
+      # Deploy
+      - name: 📂 Sync Files
+        uses: SamKirkland/web-deploy@v1
+        with:
+          target-server: 217.196.55.174
+          remote-user: u222328741
+          private-ssh-key: ${{ secrets.SHH_PRIVATE_KEY }}
+          ssh-port: 65002
+          destination-path: /home/u222328741/domains/iflexgym.site/public_html/staging/wp-content
