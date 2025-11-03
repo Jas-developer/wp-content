@@ -97,7 +97,7 @@
   .floating-info-container {
     margin-top: -80px;
     height: 200px;
-    z-index: 0 !important;
+    z-index: 2 !important;
   }
 
   #hero-section {
