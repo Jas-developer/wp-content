@@ -9,7 +9,7 @@
    h1 is hidden | for seo purpose only 
    ---- -->
    <h1 class='visually-hidden'>i.Flex Fitness Philippines - Training Ground for Greatness!</h1>
-  <section id="hero-section" class="d-flex w-100 flex-column justify-content-center align-items-center bg-light">
+  <section  id="hero-section" class="d-flex w-100 flex-column justify-content-center  align-items-center ">
 
     <div class="container-lg w-100 flex-column container-fluid h-75 d-flex ps-lg-5 justify-content-lg-center align-items-center align-items-lg-center">
       
@@ -24,13 +24,13 @@
 
         <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 fs-1 fw-bold text-danger">
           <span class="text-black">i.</span>
-          <span class="text-danger">Flex</span>
+          <span class="logo-color">Flex</span>
         </span>
       </div>
 
       <br>
 
-      <h3 class="for-greatness text-danger fs-lg-1 fs-md-2 fs-3  fw-bold">
+      <h3 class="for-greatness text-white fs-lg-1 fs-md-2 fs-3  fw-bold">
         GROUND FOR GREATNESS
       </h3>
 

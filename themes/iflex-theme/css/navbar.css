@@ -5,7 +5,18 @@
     height: auto;
   }
 }
-
+#header-container-v2 {
+  background: linear-gradient(
+    to bottom,
+    rgb(87, 4, 4) 0%,
+    rgba(150, 7, 7, 0.8) 70%,
+    rgba(224, 15, 15, 0) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 /* buttons, Nav, Text */
 #login-button {
   background-color: E84444 !important;

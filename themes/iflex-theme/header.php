@@ -39,7 +39,7 @@
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
            <button id="toggle-button" class="border-0 position-relative bg-transparent">
-           <span style="margin-left:-10px; font-size:25px;" class="dashicons dashicons-menu-alt3 text-danger position-absolute top-50 start-50 translate-middle z-3"></span>
+           <span style="margin-left:-10px; font-size:25px;" class="dashicons dashicons-menu-alt3 text-light position-absolute top-50 start-50 translate-middle z-3"></span>
            </button>
          </div>
       </div>
@@ -70,7 +70,7 @@
               bg-danger border shadow-md fw-semibold text-light py-2 shadow-sm  px-5 rounded-pill">
               EXAMS
             </button>
-            <button class="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'text-light'; else : echo 'text-danger'; endif;?> fw-bold cursor-pointer border border-0 bg-transparent" 
+            <button class="text-light fw-bold cursor-pointer border border-0 bg-transparent" 
             onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
            </div> 
         <!-- show only if user is not logged in -->
