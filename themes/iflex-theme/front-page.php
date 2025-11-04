@@ -49,7 +49,7 @@
     </div>
 
     <!-- Medium to large screen -->
-    <div class="rounded position-relative d-none d-md-block justify-content-center align-items-center px-3 py-5 shadow-lg w-75 bg-white container">
+    <div class="rounded position-relative d-none d-md-block justify-content-center align-items-center px-3 py-5 shadow-lg w-100 bg-white container">
       <?php get_template_part( 'template-parts/floating', 'info' ); ?>
     </div>
 
