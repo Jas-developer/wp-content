@@ -115,6 +115,7 @@
     text-align: left;
     width: 100%;
     text-align: center;
+    -webkit-text-stroke: 3px #da1313;
   }
 }
 

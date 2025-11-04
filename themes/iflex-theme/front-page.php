@@ -16,21 +16,24 @@
       <div class="position-relative mt-5">
         <h2 
           id="hero-section-heading" 
-          class="position-relative"
+          class="position-relative z-1"
           style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"
         >
           TRAINING
         </h2>
 
-        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 fs-1 fw-bold text-danger">
-          <span class="text-black">i.</span>
+        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-1 fs-1 fw-bold text-danger">
+          <span class="text-light">i.</span>
           <span class="logo-color">Flex</span>
+          <span class="text-light">Fitness Gym</span>
         </span>
-      </div>
 
+  
+      </div>
+      
       <br>
 
-      <h3 class="for-greatness text-white fs-lg-1 fs-md-2 fs-3  fw-bold">
+      <h3 class="for-greatness text-white fs-lg-1 fs-md-2 fs-3 z-1 fw-bold">
         GROUND FOR GREATNESS
       </h3>
 
@@ -62,7 +65,7 @@
   <div class="about-us-container mt-n1 pt-md-3 pt-0 pt-lg-0 w-100 position-relative">
     <?php get_template_part( 'template-parts/about', 'us' ); ?>
   </div>
-
+  
 </main>
 
 <?php get_footer(); ?>
