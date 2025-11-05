@@ -11,31 +11,36 @@
    <h1 class='visually-hidden'>i.Flex Fitness Philippines - Training Ground for Greatness!</h1>
   <section style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"  id="hero-section" class="d-flex w-100 flex-column justify-content-center  align-items-center ">
 
-    <div class="container-lg w-100 flex-column container-fluid h-75 d-flex ps-lg-5 justify-content-lg-center align-items-center align-items-lg-center">
+    <div class="container-lg w-100 flex-column container-fluid h-75 d-flex ps-lg-5 justify-content-lg-center align-items-center align-items-lg-start">
       
-      <div class="position-relative mt-5">
+      <div class=" w-100  d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+        <div class="position-relative mt-5">
         <h2 
           id="hero-section-heading" 
-          class="position-relative z-1"
+          class="position-relative z-2  "
          
         >
           TRAINING
         </h2>
 
-        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-1 fs-1 fw-semibold text-danger">
+        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-2 fs-1 fw-semibold text-danger">
           <span class="text-light">i.</span>
           <span class="logo-color">Flex</span>
           <span class="text-light">Fitness</span>
         </span>
-
-  
-      </div>
-      
-      <br>
-
-      <h3 class="for-greatness text-white fs-lg-1 fs-md-2 fs-3 z-1 fw-bold">
+   <div class="w-100 d-flex flex-column ">
+     <h3 class="for-greatness text-white   fs-lg-1 fs-md-2 fs-3 z-2 fw-bold">
         GROUND FOR GREATNESS
       </h3>
+    <hr class=" w-50 z-2  custom-hr">
+      <a class='align-items-center btn btn-light z-2 px-5 border border-1 text-danger fw-bold border-danger w-auto align-self-start  ' >
+        JOIN NOW
+      </a>
+   </div>
+      </div>
+      
+
+      </div>
 
     </div>
   </section>
