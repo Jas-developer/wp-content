@@ -1,13 +1,13 @@
 /* configure the logo size */
 .iflex-logo {
-  width: 150px;
-  height: auto;
+  width: 170px;
+  height: 100px;
 }
 
 @media (max-width: 1024px) {
   .iflex-logo {
-    width: 170px;
-    height: auto;
+    width: 190px;
+    height: 100px;
   }
 }
 #header-container-v2 {
