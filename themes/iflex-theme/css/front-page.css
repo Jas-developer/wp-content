@@ -30,17 +30,15 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgb(115, 4, 4);
 }
 
 #hero-section-heading {
   margin-top: 50px;
   font-size: 4rem;
   font-weight: 900;
-  color: white;
+  color: #f11b1b;
   text-align: center;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
   background-size: cover;
 }
 .cursor-pointer {
@@ -84,6 +82,7 @@
   #hero-section-heading {
     font-size: 6rem;
     font-weight: 700;
+    color: #f11b1b;
   }
 }
 
@@ -104,18 +103,17 @@
     background-attachment: fixed;
     width: 100%;
     height: 68vh;
-    background-color: rgb(115, 4, 4);
   }
 
   #hero-section-heading {
-    font-size: 10rem;
+    font-size: 8rem;
     letter-spacing: 1rem;
     font-weight: 900;
-    color: white;
+    color: #f11b1b;
     text-align: left;
     width: 100%;
     text-align: center;
-    -webkit-text-stroke: 3px #da1313;
+    -webkit-text-stroke: 3px #ffffff;
   }
 }
 

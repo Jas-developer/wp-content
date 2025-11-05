@@ -9,7 +9,7 @@
    h1 is hidden | for seo purpose only 
    ---- -->
    <h1 class='visually-hidden'>i.Flex Fitness Philippines - Training Ground for Greatness!</h1>
-  <section  id="hero-section" class="d-flex w-100 flex-column justify-content-center  align-items-center ">
+  <section style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"  id="hero-section" class="d-flex w-100 flex-column justify-content-center  align-items-center ">
 
     <div class="container-lg w-100 flex-column container-fluid h-75 d-flex ps-lg-5 justify-content-lg-center align-items-center align-items-lg-center">
       
@@ -17,15 +17,15 @@
         <h2 
           id="hero-section-heading" 
           class="position-relative z-1"
-          style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"
+         
         >
           TRAINING
         </h2>
 
-        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-1 fs-1 fw-bold text-danger">
+        <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-1 fs-1 fw-semibold text-danger">
           <span class="text-light">i.</span>
           <span class="logo-color">Flex</span>
-          <span class="text-light">Fitness Gym</span>
+          <span class="text-light">Fitness</span>
         </span>
 
   
