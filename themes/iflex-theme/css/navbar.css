@@ -1,4 +1,9 @@
 /* configure the logo size */
+.iflex-logo {
+  width: 150px;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   .iflex-logo {
     width: 170px;
