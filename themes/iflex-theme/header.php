@@ -83,9 +83,5 @@
    </div>
 </nav>
    </div>
-   <hr class="<?php if(is_page( 16 ) || is_singular( 'certified_trainers' )){
-    echo 'd-md-none d-block text-gray w-100';
-   } else {
-    echo 'd-none';
-   } ?>">
+   
 </header>

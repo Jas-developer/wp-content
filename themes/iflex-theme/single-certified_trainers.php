@@ -3,12 +3,12 @@
   get_header(); 
 ?>
 
-<main class="single-trainer-wrapper mt-lg-10">
+<main class="single-trainer-wrapper mt-10 mt-lg-10">
 
   <div class="container">
     <div class="row gap-lg-5">
       
-      <div class="col-12 col-lg-4 d-flex justify-content-start align-items-start flex-column gap-4">
+      <div class="col-12 col-lg-4 d-flex justify-content-start align-items-start flex-column gap-2">
         
         <!-- back to trainers container -->
         <button 
@@ -20,17 +20,7 @@
         </button>         
         <span>
         </span>
-        <!-- trainer level -->
-        <span class="trainer-level mt-lg-5 rounded-pill shadow text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger"> 
-          <?php 
-            
-            $level = get_field('trainer_level');  
-            if($level): 
-              echo esc_html($level); 
-            endif;
-          ?>
-        </span>
-
+        
         <!-- trainer image -->
         <div class="trainer-img-card w-100 overflow-hidden rounded border border-0 border-dark position-relative">
           <?php if($imageUrl = get_field('certified_trainer')): ?>
@@ -40,7 +30,25 @@
               alt="<?php echo esc_html( get_the_title() ); ?>"
             >
           <?php endif; ?>
+         
         </div>
+        
+         <!-- trainer name -->
+        <h2 class="fw-semibold fs-3 text-uppercase text-danger bg-transparent  py-1 px-3">
+          <?php echo esc_html(get_the_title()); ?>
+        </h2>
+        <!-- trainer level -->
+        <span class="trainer-level rounded-pill shadow text-light w-75 py-1 rounded px-1 text-center fw-bold fs-6 border border-1 bg-danger"> 
+          <?php 
+            
+            $level = get_field('trainer_level');  
+            if($level): 
+              echo esc_html($level); 
+            endif;
+          ?>
+        </span>
+         
+            
 
         <!-- trainer quotes -->
         <div class="quotes-container">
@@ -56,13 +64,9 @@
       <!-- #2 info container -->
       <div class="col-12 col-lg-7 justify-content-start align-items-center">
 
-        <!-- trainer name -->
-        <h2 class="fw-semibold fs-4 text-uppercase text-light bg-success shadow py-1 px-3">
-          <?php echo esc_html(get_the_title()); ?>
-        </h2>
        
       
-        <div class="d-flex flex-row justify-content-start align-items-center gap-5">
+        <div class="d-flex flex-row justify-content-start align-items-start gap-5">
            <!-- address  -->
         <div class="d-flex flex-column justify-content-center align-items-start gap-1">
           <span class="fs-4 fw-semibold  text-dark">Address</span>
