@@ -13,7 +13,23 @@
     object-position: center;
     display: block;
   }
+  .certified-trainer-card {
+    width: 100%;
+  }
 }
+/* tablet */
+@media (min-width: 600px) {
+  .certified-trainer-card {
+    width: 95%;
+  }
+}
+/* mobile */
+@media (max-width: 600px) {
+  .certified-trainer-card {
+    width: 85%;
+  }
+}
+
 /* search container */
 #search-trainer-container {
   height: 100px;

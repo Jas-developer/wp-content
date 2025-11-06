@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 <?php get_header(); ?>
 
-<main class="certified-trainer-wrapper mt-lg-9">
+<main class="certified-trainer-wrapper mt-7 mt-lg-9">
   <div class="container">
 
     <?php
@@ -47,10 +47,10 @@
         <?php while ( $certified_trainers->have_posts() ) {
           $certified_trainers->the_post(); ?> 
           
-          <div class="col">
+          <div class="col  d-flex justify-content-center">
             <div onclick="window.location.href='<?php echo esc_url(get_the_permalink()) ?>'"
                  style="cursor:pointer;"
-             class="certified-trainer-card w-100  h-100 border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1 py-2 px-lg-3  py-5 py-lg-5 gap-4">
+             class="certified-trainer-card   h-100 border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1  py-3 gap-4">
 
               <!-- Trainer image -->
               <div class="rounded-pill overflow-hidden shadow position-relative border-bottom border-1 w-75">
