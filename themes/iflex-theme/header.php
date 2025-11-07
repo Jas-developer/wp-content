@@ -12,7 +12,7 @@
 <body <?php body_class(); ?> >
   <?php wp_body_open(); ?>
    
-  <header id="<?php if(is_page(37) || is_singular( 'certified_trainers' ) || is_page(16) || is_page(35)) : echo 'header-container-v2'; else: echo 'header-container'; endif;
+  <header id="<?php if(!is_front_page(  )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
      ?>" class="overflow-hidden z-3">
   
    <div class="container overflow-hidden">

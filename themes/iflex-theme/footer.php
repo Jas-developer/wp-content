@@ -1,4 +1,6 @@
-<footer  class="mt-lg-10   mt-8">
+<footer class="<?php echo !is_page(35) ? 'mt-lg-10 mt-8' : ''; ?>">
+
+
   
   <div class="footer-wrapper py-lg-5 py-4 container-fluid bg-leniar">
     
