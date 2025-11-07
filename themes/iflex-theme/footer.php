@@ -2,7 +2,7 @@
 
 
   
-  <div class="footer-wrapper py-lg-5 py-4 container-fluid bg-leniar">
+  <div class="footer-wrapper py-lg-5 py-4 container-fluid  bg-leniar-right">
     
     <div class="container">
         <!-- 
