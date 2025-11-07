@@ -1,13 +1,34 @@
 .trainer-img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 0 150px 0 150px;
+
   border: solid 2px rgb(112, 1, 1);
 }
+
+.single-trainer-img {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: solid 3px rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 1023px) {
+  .single-trainer-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+
+    border: solid 3px rgb(255, 255, 255);
+  }
+
   .trainer-img {
     width: 100%;
     height: 300px;
