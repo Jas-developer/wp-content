@@ -12,7 +12,7 @@
   $module_query = new WP_Query($args);
 
   if ($module_query->have_posts()) {
-    echo '<div class="row row-cols-1  py-2 row-cols-md-3 row-cols-lg-4 g-3">';
+    echo '<div class="row row-cols-1 mt-5 py-2 row-cols-md-3 row-cols-lg-4 g-3">';
     
     while ($module_query->have_posts()) {
       $module_query->the_post();
