@@ -71,7 +71,7 @@ function redirect_user_by_role($redirect_to,$request,$user){
       return admin_url();
     }
 
-    if(in_array('subscriber', $user->roles)){
+    if(in_array('Trainer', $user->roles)){
       return home_url();
     }
   }
