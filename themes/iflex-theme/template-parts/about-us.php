@@ -19,7 +19,7 @@
             </div>
             <div class="btn-container w-100 ">
                 <a href='<?php echo esc_url(get_permalink(35)) ?>' class="bg-danger text-decoration-none scale-btn-hover rounded-pill border-0 border px-4 px-md-5 py-2 text-light ">
-                    JOIN NOW
+                    APPLY NOW
                 </a>
             </div>
         </div>

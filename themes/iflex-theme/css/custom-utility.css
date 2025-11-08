@@ -62,7 +62,9 @@
     width: 75% !important;
   }
 }
-
+.w-sm-100 {
+  width: 100% !important;
+}
 /* margin top */
 .mt-6 {
   margin-top: var(--spacing-6);

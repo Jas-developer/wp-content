@@ -1,14 +1,8 @@
 .text-color {
   color: #393536;
 }
-
-@media (min-width: 600px) {
-  .cert-hero-section {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right center;
-    position: relative;
-  }
+.who-is-it-container {
+  width: 100%;
 }
 
 .cert-hero-section {
@@ -29,4 +23,18 @@
   height: 100%;
   background: linear-gradient(to right, rgb(205, 27, 27), transparent);
   z-index: 1;
+}
+@media (min-width: 600px) {
+  .cert-hero-section {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+  }
+}
+
+@media (min-width: 1023px) {
+  .who-is-it-container {
+    width: 75%;
+  }
 }

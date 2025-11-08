@@ -5,7 +5,7 @@
        <!-- section 1-->
         <section 
         style='background-image:url("<?php echo get_theme_file_uri('assets/bg-images/arm-flexing.webp' ) ?>")' 
-         class="container border border-0 cert-hero-section d-flex justify-content-center align-items-start  w-100">
+         class="container border border-0 cert-hero-section d-flex justify-content-start align-items-center  w-100">
             <div 
         class=" d-flex mt-5 py-4   w-md-75  flex-column justify-content-center align-items-start gap-4">
           <h1 class="fs-2 fw-semibold text-color text-start">
@@ -20,7 +20,7 @@
         </section>
       
     </div>
-   <section class="vh-50 container  d-flex justify-content-center align-items-center">
+   <section class="vh-50 container  d-flex justify-content-start border-bottom border-1 align-items-center">
         <div 
         class=" d-flex py-4   w-md-75  flex-column justify-content-center align-items-start gap-4">
           <h1 class="fs-2 fw-semibold  text-color text-start">
@@ -32,24 +32,20 @@
            </p>
            
         </div>
+        
       </section> 
       
       <!-- who is it for section -->
-   <section class="d-flex container pb-  flex-column justify-content-center align-items-center">
-      <div class="d-flex w-md-75 gap-lg-5  gap-2 flex-md-row flex-colum justify-content-start  align-items-center">
-         <div class="icon-container ">
-            <img src="<?php echo get_theme_file_uri( '/assets/icons/boxing-icon.webp' ) ?>" 
-          width="100" height="100"
-          alt="i.Flex Fitness Muy-Thai Program" class="floating-info-icon">
-         </div>
-         <div class="text-container ">
-            <h4>Fitness Enthusiast</h4>
-           <p class='text-start text-color  z-2 fw-normal'>
-            Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, 
-            boost credibility, and inspire others through your knowledge.
-           </p>
-         </div>
-      </div>
+   <section class="d-flex container px-2  pb-2 pt-5 gap-2 gap-lg-5  flex-column justify-content-center align-items-start">
+     
+       <div class="who-is-it-container">
+           <h2 class='text-color fw-bold  '>WHO IS IT FOR ?</h2>
+      <br >
+      <?php 
+       get_template_part( '/template-parts/whos-it-for' );
+      ?>
+      
+       </div>
    </section>
  </main>
  
