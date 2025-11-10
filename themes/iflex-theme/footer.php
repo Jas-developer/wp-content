@@ -1,7 +1,11 @@
-<footer class="<?php echo !is_page(35) ? 'mt-lg-10 mt-8' : ''; ?>">
-
-
-  
+<footer class="<?php
+  if(!is_page(35) AND !is_front_page()){
+    echo 'mt-lg-10 mt-8';
+  } else {
+    echo '';
+  }
+?>">
+ 
   <div class="footer-wrapper py-lg-5 py-4 container-fluid  bg-leniar-right">
     
     <div class="container">

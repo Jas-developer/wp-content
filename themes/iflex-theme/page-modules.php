@@ -16,6 +16,7 @@
     
     while ($module_query->have_posts()) {
       $module_query->the_post();
+      
 
       $user_level   = get_user_meta(get_current_user_id(), 'trainer_level', true);
       $module_level = get_field('trainer_level_modules');
