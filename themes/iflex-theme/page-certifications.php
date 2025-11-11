@@ -1,6 +1,6 @@
 <?php  if ( ! defined( 'ABSPATH' ) ) exit; ?>
  <?php get_header(); ?>
- <main class="container-fluid flex-column mb-4 d-flex justify-content-center align-items-center  p-0 page ">
+ <main class="container-fluid flex-column pt-5 mb-4 d-flex justify-content-center align-items-center  p-0 page ">
     <div  class="d-flex flex-column  mt-5 pt-2 py-lg-2 p-0 gap-0 w-100  justify-content-center align-items-start">
        <!-- section 1-->
         <section 
