@@ -1,5 +1,5 @@
 <footer class="<?php
-  if(!is_page(35) AND !is_front_page()){
+  if(!is_page(35) AND !is_front_page() AND !is_page(16)) {
     echo 'mt-lg-10 mt-8';
   } else {
     echo '';
