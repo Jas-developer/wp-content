@@ -57,10 +57,9 @@
   <!-- ==========================
        ABOUT US SECTION ||
   =========================== -->
-  <section class="about-us-container container-lg-fluid  mt-n1 pt-md-3 pt-0 pt-lg-0 w-100 position-relative">
+  <section class="about-us-container container-lg-fluid  w-100 position-relative">
     <?php get_template_part( 'template-parts/about', 'us' ); ?>
   </section>
-  
 </main>
 
 <?php get_footer(); ?>
