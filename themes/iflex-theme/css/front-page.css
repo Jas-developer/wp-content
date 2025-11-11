@@ -6,7 +6,7 @@
 }
 
 .floating-info-container {
-  margin-top: -80px;
+  margin-top: -10px;
   height: 200px;
   position: relative !important;
   z-index: 1 !important;
@@ -82,7 +82,7 @@
 /* from ipad mini screen */
 @media (min-width: 600px) {
   .floating-info-container {
-    margin-top: -80px;
+    margin-top: -10px;
     height: 200px;
     position: relative !important;
     z-index: 1 !important;
