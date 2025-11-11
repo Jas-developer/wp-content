@@ -12,7 +12,7 @@
   <section style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"  id="hero-section" class="d-flex w-100 flex-column justify-content-center pt-lg-0 pt-5  align-items-center ">
 
   <div class="container-lg  container-fluid w-100 h-75 d-flex flex-row ps-lg-5 justify-content-lg-center align-items-center align-items-lg-start">
-  <div class="w-100 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+  <div class="w-100 d-flex mt-4 flex-column justify-content-center align-items-center align-items-lg-start">
     <div class="position-relative mt-5">
       <h2 id="hero-section-heading" class="position-relative z-2">TRAINING</h2>
 
