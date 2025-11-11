@@ -1,4 +1,4 @@
-<div class=" w-100 justify-content-center  align-items-center">
+<div class=" w-100 container-md container-fluid justify-content-center  align-items-center">
     <div class="row gap-md-0 gap-3">
         <div class="col-12 mt-4 mt-md-0   col-md-6 d-flex position-relative overflow-hidden justify-content-lg-end justify-content-center align-items-center  align-items-lg-center">
              <img id='marco-img' 
