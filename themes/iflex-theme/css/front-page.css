@@ -130,8 +130,8 @@
       height: 100%;
     }
     #marco-img {
-      width: 450px;
-      height: 450px;
+      width: 550px;
+      height: 500px;
     }
 
     .about-us-container {
@@ -168,6 +168,13 @@
       background-attachment: fixed;
       width: 100%;
       height: 60vh;
+    }
+
+    #marco-img {
+      width: 650px;
+      height: 550px;
+      object-fit: cover;
+      object-position: center;
     }
 
   }
