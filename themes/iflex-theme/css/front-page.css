@@ -90,12 +90,13 @@
   }
   #hero-section {
     width: 100%;
-    height: 65vh;
+    height: 64vh;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
     background-attachment: fixed;
     position: relative;
+    background-color: black;
   }
   #marco-img {
     width: 400px;
@@ -144,7 +145,7 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 68vh;
+    height: 78vh;
   }
 
   #hero-section-heading {
