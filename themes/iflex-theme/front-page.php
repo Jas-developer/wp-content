@@ -14,7 +14,7 @@
   <div class="container-lg  container-fluid w-100 h-100 d-flex flex-column  justify-content-center align-items-center align-items-lg-start">
   <div class="w-100 d-flex mt-4 flex-column justify-content-center align-items-center align-items-lg-start">
     <div class="position-relative mt-5">
-      <h2 id="hero-section-heading" class="position-relative z-2">tyry TRAINING</h2>
+      <h2 id="hero-section-heading" class="position-relative z-2">TRAINING</h2>
 
       <span id="hero-section-flex" class="position-absolute top-0 end-0 me-n4 z-2 fs-1 fw-semibold text-danger">
         <span class="text-light">i.</span>
