@@ -36,6 +36,6 @@ jobs:
         with:
           target-server: 217.196.55.174
           remote-user: u222328741
-          private-ssh-key: ${{ secrets.SHH_PRIVATE_KEY }}
+          private-ssh-key: ${{ secrets.WORK_SSH_KEY }}
           ssh-port: 65002
           destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content
