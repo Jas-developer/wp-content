@@ -22,9 +22,9 @@
         <span class="text-light">Fitness</span>
       </span>
 
-      <div class="w-100 d-flex flex-column">
+      <div class="w-100 d-flex gap-2 flex-column">
         <h3 class="for-greatness text-white fs-lg-1 fs-md-2 fs-3 z-2 fw-bold">GROUND FOR GREATNESS</h3>
-        <hr class="w-50 z-2 custom-hr">
+       
         <a class="btn btn-light z-2 px-5 border border-1 text-danger fw-bold border-danger w-auto align-self-start">
           JOIN NOW
         </a>
