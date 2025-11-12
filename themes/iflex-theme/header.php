@@ -15,7 +15,7 @@
   <header id="<?php if(!is_front_page(  )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
      ?>" class="overflow-hidden z-3">
   
-   <div class="container-fluid px-lg-5 overflow-hidden">
+   <div class="container-fluid px-lg-5 px-0 overflow-hidden">
     <nav class="row align-items-center  py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
