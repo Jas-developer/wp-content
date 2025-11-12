@@ -11,7 +11,7 @@
    <h1 class='visually-hidden'>i.Flex Fitness Philippines - Training Ground for Greatness!</h1>
   <section style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/iflex-fitness.webp' ); ?>');"  id="hero-section" class="d-flex w-100 flex-column justify-content-center  align-items-center ">
 
-  <div class="container-lg  container-fluid w-100 h-100 d-flex flex-column   justify-content-center align-items-center ">
+  <div class="container  w-100 h-100 d-flex flex-column   justify-content-center align-items-center ">
   <div class="w-100 d-flex mt-4 flex-column justify-content-center align-items-start">
     <div class="position-relative mt-5">
       <h1 id="hero-section-heading" class="position-relative  z-2"><span class="text-white">i.</span>Flex <span class="text-white">Fitness</span></h1>
