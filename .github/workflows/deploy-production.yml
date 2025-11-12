@@ -3,7 +3,7 @@ name: Publish Website
 on:
   push:
     branches:
-      - ui-improvement
+      - main
 
 jobs:
   web-deploy:
@@ -38,4 +38,4 @@ jobs:
           remote-user: u222328741
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: 65002
-          destination-path: /home/u222328741/domains/iflexgym.site/public_html/staging/wp-content
+          destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content
