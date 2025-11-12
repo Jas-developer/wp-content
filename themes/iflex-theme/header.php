@@ -15,12 +15,12 @@
   <header id="<?php if(!is_front_page(  )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
      ?>" class="overflow-hidden z-3">
   
-   <div class="container overflow-hidden">
-    <nav class="row align-items-center py-3 d-lg-fixed">
+   <div class="container-fluid px-lg-5 overflow-hidden">
+    <nav class="row align-items-center  py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
         <!-- LARGE SCREEN - LOGO -->
-          <div class="d-none align-items-center d-lg-flex">
+          <div class="d-none align-items-center  d-lg-flex">
               <?php 
                 if(has_custom_logo()){
                   the_custom_logo();
