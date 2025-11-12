@@ -53,7 +53,7 @@
              class="certified-trainer-card   h-100 border overflow-hidden d-flex flex-column justify-content-center align-items-center px-1  py-3 gap-4">
 
               <!-- Trainer image -->
-              <div class="rounded-pill overflow-hidden shadow position-relative border-bottom border-1 w-75">
+              <div class=" overflow-hidden shadow position-relative w-75">
                 <?php $imageUrl = get_field('certified_trainer'); ?>
                 <img class="trainer-img rounded w-100 "
                      src="<?php echo esc_url($imageUrl['url']); ?>"
@@ -73,7 +73,7 @@
                <button onclick="window.location.href='<?php echo esc_url(get_permalink()); ?>'"
                        class="d-flex bg-transparent align-items-center gap-2 w-50 justify-content-center"
                        style="border: none; border-bottom: 2px solid #dc3545;">
-                       <span class="text-danger fw-semibold mb-1">SEE MORE</span>
+                       <span class="text-danger fw-semibold mb-1">PROFILE</span>
                        <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger"></span>
                </button>
 

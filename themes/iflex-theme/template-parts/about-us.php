@@ -19,8 +19,8 @@
                <p>you demonstrate your capability to train others effectively and gain credibility as a qualified and trusted trainer.</p>
             </div>      
             <div class="btn-container px-2 w-100 ">
-                <a href='<?php echo esc_url(get_permalink(35)) ?>' class="bg-danger text-decoration-none scale-btn-hover rounded-pill border-0 border px-4 px-md-5 py-2 text-light ">
-                    APPLY NOW
+                <a href='<?php echo esc_url(get_permalink(35)) ?>' class="bg-danger text-decoration-none scale-btn-hover rounded-pill border-0 border px-3 px-md-3 py-2 text-light ">
+                    <span>Learn more</span>
                 </a>
             </div>
         </div>
