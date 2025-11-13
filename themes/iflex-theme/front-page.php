@@ -42,11 +42,12 @@
 
 
   <!-- ==========================
-       ABOUT US SECTION ||
+      BE A CERTIFIED TRAINER SECTION
   =========================== -->
-  <section class="about-us-container container-lg-fluid pt-lg-5 mt-lg-5  w-100 position-relative">
-    <?php get_template_part( 'template-parts/about', 'us' ); ?>
+  <section class="container position-relative">
+    <?php get_template_part( 'template-parts/about-us'); ?>
   </section>
+  
 </main>
 
 <?php get_footer(); ?>

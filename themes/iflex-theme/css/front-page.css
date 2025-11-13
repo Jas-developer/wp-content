@@ -1,9 +1,37 @@
   /* 🌱 Base styles — apply to all (mobile first) */
+
+
+
+cert-img-container
+cert-main-img-container
+.cert-img-container{
+  width: 100%;
+  
+}
+
+.cert-main-img-container{
+  width: 100%;
+}
+
+
+  .be-cert-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .be-cert-image-main
+  {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  } 
   .dash-class{
     transform: rotate(60deg);
   }
   .classes-header{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 .class-card{
   height: 400px;
@@ -100,6 +128,31 @@
 
   /* from ipad mini screen */
   @media (min-width: 600px) {
+     .classes-header{
+    font-size: 4rem;
+  }
+    .cert-img-container{
+  width: 40%;
+  
+}
+
+.be-cert-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+    .be-cert-image-main
+  {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  } 
+
+.cert-main-img-container{
+  width: 60%;
+}
     .floating-info-container {
       margin-top: -10px;
       height: 200px;
@@ -154,6 +207,29 @@
 
   /* 💻 Large screens (≥ 1024px) */
   @media (min-width: 992px) and (max-width: 1399px) {
+     .classes-header{
+    font-size: 4rem;
+  }
+    .cert-img-container{
+  width: 40%;
+}
+
+    .be-cert-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+    .be-cert-image-main
+  {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  } 
+    .cert-main-img-container{
+    width: 60%;
+    }
     .class-card{
   height: 500px;
   width: 100%;
@@ -203,6 +279,28 @@
 
   /* desktop monitor */
   @media (min-width: 1400px) {
+     .classes-header{
+    font-size: 4.5rem;
+  }
+    .cert-img-container{
+  width: 40%;
+}
+.cert-main-img-container{
+  width: 60%;
+}
+    .be-cert-image{
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    object-position: center;
+  }
+    .be-cert-image-main
+  {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  } 
     .class-card{
   height: 500px;
   width: 100%;
