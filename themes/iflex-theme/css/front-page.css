@@ -2,11 +2,9 @@
 
 
 
-cert-img-container
-cert-main-img-container
+
 .cert-img-container{
-  width: 100%;
-  
+  width: 50%;
 }
 
 .cert-main-img-container{

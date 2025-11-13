@@ -2,11 +2,11 @@
 
   <div class="col-lg-7 order-2 order-lg-1 pt-4 pt-md-5 pt-lg-3 col-12 ">
     <div class="d-flex flex-column flex-md-row w-100  gap-2 ">
-        <div class="d-flex cert-img-container order-2 order-md-1 flex-row flex-md-column gap-2   h-100">
+        <div class="d-flex cert-img-container  flex-row flex-md-column gap-2   h-100">
             <img class='be-cert-image rounded-lg-3 rounded-2 shadow' src="<?php echo get_theme_file_uri( '/assets/certified/certified-1.webp' ) ?>" alt="">
             <img class='be-cert-image rounded-lg-3 rounded-2 shadow '  src="<?php echo get_theme_file_uri( '/assets/certified/certified-2.webp' ) ?>" alt="">
         </div>
-        <div class='cert-main-img-container order-1 order-md-2  d-flex justify-content-center align-items-center h-100'>
+        <div class='cert-main-img-container  d-flex justify-content-center align-items-center h-100'>
             <img class='be-cert-image-main rounded-lg-3 rounded-2 shadow' src="<?php echo get_theme_file_uri( '/assets/certified/certified-3.webp' ) ?>" alt="">
         </div>
     </div>
