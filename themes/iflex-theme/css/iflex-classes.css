@@ -1,0 +1,54 @@
+.single-class-content {
+  width: 100%;
+  background-color: rgb(196, 24, 24);
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.single-class-image {
+  width: 100%;
+}
+
+/* Only apply on large screens */
+@media (min-width: 992px) {
+  .single-class-cards {
+    position: relative;
+    display: flex; /* side-by-side layout */
+    height: 400px;
+  }
+
+  /* Cross lines */
+  .single-class-cards::before,
+  .single-class-cards::after {
+    content: "";
+    position: absolute;
+    background: rgb(233, 154, 154);
+  }
+
+  /* Vertical line */
+  .single-class-cards::before {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  /* Horizontal line */
+  .single-class-cards::after {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  /* Side-by-side content */
+  .single-class-content {
+    width: 60%;
+  }
+
+  .single-class-image {
+    width: 40%;
+  }
+}
