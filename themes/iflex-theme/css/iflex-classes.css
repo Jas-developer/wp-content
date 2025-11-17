@@ -11,6 +11,18 @@
 
 /* Only apply on large screens */
 @media (min-width: 992px) {
+    .single-class-image{
+        height: 500px;
+    }
+    .single-class-image>img {
+     width: 66%;
+     height: 470px;
+     object-fit: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+   }
   .single-class-cards {
     position: relative;
     display: flex; /* side-by-side layout */
@@ -45,6 +57,17 @@
 
   /* Side-by-side content */
   .single-class-content {
+    width: 60%;
+  }
+
+  .single-class-image {
+    width: 40%;
+  }
+}
+
+/* on desktop screens */
+@media(min-width:1440px){
+   .single-class-content {
     width: 60%;
   }
 
