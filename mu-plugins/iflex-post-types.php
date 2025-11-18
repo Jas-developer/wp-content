@@ -2,7 +2,18 @@
 
 
 function iflex_post_types(){
-
+//iflex classes post type
+register_post_type('classes',array(
+  "labels" => array(
+    'name' => 'i.Flex Classes',
+    'singular_name' => 'Class',
+    'add_new_item' => 'Add new Class',
+    'name_admin_bar' => 'Class',
+    'edit_item' => 'Edit i.Flex Class',
+  ),'show_ui' => true,
+  'public' => true,
+  'supports' => array('title','editor'),
+));
 
   //exams for trainers 
     register_post_type( 'exams', array(
