@@ -73,6 +73,7 @@
     position: relative;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-bottom:10px solid rgb(194, 15, 15);
   }
 
   #hero-section::after {

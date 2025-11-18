@@ -1,10 +1,13 @@
 <?php get_header(); ?>
  <main class="classes-main-wrapper">
-  <section class="container mt-10 mb-4 d-flex flex-column">
+  <section class="container mt-10 mb-4 d-flex justify-content-start flex-column">
     <h2 class="fs-1 text-danger text-uppercase fw-bold"><?php echo esc_html(get_the_title()); ?></h1>
     <p class="fs-5 text-color"><?php echo esc_html(get_the_content()); ?></p>
+    <br>
+    <button class="d-flex bg-transparent justify-content-start border border-0  w-100">
+      <a href="" class='text-white bg-danger px-4 py-2  rounded-1 fw-semibold text-decoration-none'>JOIN NOW</a>
+    </button>
   </section>
-   
   <section class="w-100 d-flex flex-md-row gap-2 flex-column">
      <div class="single-class-content d-flex border container  justify-content-end align-items-center">
         <div class=" single-class-cards  d-flex flex-column ">
