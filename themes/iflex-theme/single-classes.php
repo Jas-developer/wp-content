@@ -5,7 +5,7 @@
     <p class="fs-5 text-color"><?php echo esc_html(get_the_content()); ?></p>
   </section>
    
-  <section class="w-100 d-flex flex-md-row  flex-column">
+  <section class="w-100 d-flex flex-md-row gap-2 flex-column">
      <div class="single-class-content d-flex border container  justify-content-end align-items-center">
         <div class=" single-class-cards  d-flex flex-column ">
             <div class=" d-flex flex-wrap h-100  position-relative">
@@ -37,10 +37,10 @@
            </div>
         </div>
      </div>
-     <div class="single-class-image d-flex  position-relative  d-flex justify-content-center align-items-center">
+     <div class="single-class-image d-flex p-1 p-md-0 position-relative  d-flex justify-content-center align-items-center">
         <?php $image_url = get_field('class_image');
            if($image_url){ ?>
-              <img class='rounded-5' src="<?php echo esc_url($image_url['url']); ?>" alt="<?php echo get_the_title(); ?>" >
+              <img class='img-fluid' src="<?php echo esc_url($image_url['url']); ?>" alt="<?php echo get_the_title(); ?>" >
           <?php  };
         ?>
      </div>

@@ -1,16 +1,19 @@
 .single-class-content {
   width: 100%;
   background-color: rgb(196, 24, 24);
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
 }
 
 .single-class-image {
   width: 100%;
 }
 
+/* for medium devices */
+@media(min-width:600px){
+  
+}
+
 /* Only apply on large screens */
-@media (min-width: 992px) {
+@media (min-width: 972px) {
   
     .single-class-image{
         height: 500px;

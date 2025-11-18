@@ -20,7 +20,7 @@
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
         <!-- LARGE SCREEN - LOGO -->
-          <div class="d-none align-items-center ps-lg-5  d-lg-flex">
+          <div class="d-none align-items-center   d-lg-flex">
               <?php 
                 if(has_custom_logo()){
                   the_custom_logo();
