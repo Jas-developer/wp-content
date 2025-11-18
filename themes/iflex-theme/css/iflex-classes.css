@@ -11,6 +11,7 @@
 
 /* Only apply on large screens */
 @media (min-width: 992px) {
+  
     .single-class-image{
         height: 500px;
     }
@@ -27,6 +28,7 @@
     position: relative;
     display: flex; /* side-by-side layout */
     height: 400px;
+    width:90%;
   }
 
   /* Cross lines */
@@ -66,7 +68,10 @@
 }
 
 /* on desktop screens */
-@media(min-width:1440px){
+@media(min-width:1400px){
+  .single-class-cards {
+    width:80%;
+  }
    .single-class-content {
     width: 60%;
   }
