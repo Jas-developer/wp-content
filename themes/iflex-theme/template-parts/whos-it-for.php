@@ -8,7 +8,7 @@
 <div class="d-flex w-md-100 gap-lg-3  gap-2 flex-md-row flex-colum justify-content-start  align-items-center">
     
   <img src="<?php echo get_theme_file_uri( '/assets/certifications/icons/level-up-iflex-icon.webp' ) ?>" 
-      width="130" height="130"
+      width="100" height="100"
       alt="Level Up your i.Flex " class="floating-info-icon">
 
   <div class="text-container ">
@@ -26,7 +26,7 @@
  <div class="d-flex w-md-100 gap-lg-3  gap-2 flex-md-row flex-colum justify-content-start  align-items-center">
     
   <img src="<?php echo get_theme_file_uri( '/assets/certifications/icons/certified-iflex-icon.webp' ) ?>" 
-      width="130" height="130"
+      width="100" height="100"
       alt="Get Certified with I.flex" class="floating-info-icon">
 
   <div class="text-container ">
@@ -44,7 +44,7 @@
   <div class="d-flex w-md-100 gap-lg-3  gap-2 flex-md-row flex-colum justify-content-start  align-items-center">
     
   <img src="<?php echo get_theme_file_uri( '/assets/certifications/icons/boost-iflex-icon.webp' ) ?>" 
-      width="130" height="130"
+      width="100" height="100"
       alt="Boost Your Fitness Expertise with i.Flex Certifications" class="floating-info-icon">
 
   <div class="text-container w-100  ">

@@ -19,7 +19,7 @@
             <h4 class='fw-semibold text-black fs-4'>BE A CERTIFIED</h4>
             <h2 class="classes-header w-100 fw-bold text-danger">FITNESS TRAINER</h2>
              <hr class=' w-50 '>
-            <p>Become a certified trainer by proving your expertise  through our official i.Flex certification exam. This program recognizes individuals who meet the required standards of knowledge, skill, and professionalism in their field. 
+            <p class='fs-5'>Become a certified trainer by proving your expertise  through our official i.Flex certification exam. This program recognizes individuals who meet the required standards of knowledge, skill, and professionalism in their field. 
 By earning this certification,</p>
         </div>
         <div class="button-content">

@@ -21,13 +21,13 @@
                   echo 'justify-content-start';
                  } ?>  align-items-center">
                    <div class="d-flex flex-row justify-content-start align-items-center gap-2 w-100">
-                     <span class="dashicons dashicons-yes-alt text-white"></span>
-                  <h4  class='text-start fs-4 fw-bold text-dark fs-5  w-100 semibold'>
+                     <span class="dashicons dashicons-yes-alt text-white "></span>
+                  <h5  class='text-start fs-2 fw-bold text-dark  m-0  semibold'>
                    <?php $title = get_field('why_'.$i.'_title'); 
                     if($title){
                       echo esc_html($title);
                     }
-                   ?></h4>
+                   ?></h5>
                    </div>
                    
                   <p class='text-start fs-5 w-100'>

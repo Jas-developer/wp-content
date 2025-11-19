@@ -9,3 +9,28 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: i-flex-fitness
 */
+
+/* Force global body font */
+body, html {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Navbar, nav links */
+.nav, .navbar, .navbar *, .nav-link, #nav-items a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Buttons */
+button, .btn {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Other common components */
+.card, .card *, .dropdown-menu, .form-control, .form-label {
+    font-family: 'Montserrat', sans-serif !important;
+}

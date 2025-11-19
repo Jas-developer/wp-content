@@ -141,13 +141,6 @@ array(), filemtime(get_theme_file_path( "build/main.css" )) );
     array('bootstrap-css'),
     filemtime( get_stylesheet_directory() . '/style.css' ) // version
       );
-function custom_theme_fonts() {
-    wp_enqueue_style(
-        'google-fonts',
-        'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap',
-        false
-    );
-}
 
 
     // Bootstrap JS (bundle includes Popper)

@@ -7,8 +7,8 @@
     <div class="row row-cols-1 row-cols-lg-2  w-100">
       <div class="text-content  d-flex align-items-start justify-content-center flex-column gap-2">
          <h2 class="fs-1 fw-bold">Certification Options That Match Your Level of Expertise</h2>
-         <h4 class='fs-5'>Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, boost credibility, and inspire others through your knowledge.</h4>
-         <button class='border-0 bg-transparent d-flex justify-content-start'>
+         <p class='fs-4 text-color'>Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, boost credibility, and inspire others through your knowledge.</p>
+         <button class='border-0  bg-transparent d-flex justify-content-start'>
             <a href="" class="bg-danger text-white  text-decoration-none px-4 py-2 rounded-2"> APPLY NOW</a>
          </button>
       </div>
