@@ -1,27 +1,25 @@
 <?php  if ( ! defined( 'ABSPATH' ) ) exit; ?>
  <?php get_header(); ?>
  <main class="container-fluid flex-column pt-5 mb-4 d-flex justify-content-center align-items-center  p-0 page ">
-    <div  class="d-flex flex-column  mt-5 pt-2 py-lg-2 p-0 gap-0 w-100  justify-content-center align-items-start">
-       <!-- section 1-->
-        <section 
-         class="container border border-0 cert-hero-section d-flex justify-content-start align-items-center  w-100">
-            <div 
-        class=" d-flex mt-5 py-4   w-md-75  flex-column justify-content-center align-items-start gap-4">
-          <h2 class="fs-1 fw-semibold text-color fw-bold text-start">
-                Certification Options That Match Your Level of Expertise
-          </h2>
-           <p class='text-start fs-5 z-2 text-color pl-lg-3 '>
-            Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, 
-            boost credibility, and inspire others through your knowledge.
-           </p>
-           <a href="" class='btn px-4 z-2 py-2 bg-danger  rounded-pill fw-semibold text-white'>Apply Now</a>
-        </div>
-        </section>
+    
+   <section class="vh-50 container flex-column mt-7    d-flex justify-content-start border-bottom border-1 align-items-center">
       
+    <div class="row row-cols-1 row-cols-lg-2  w-100">
+      <div class="text-content  d-flex align-items-start justify-content-center flex-column gap-2">
+         <h2 class="fs-1 fw-bold">Certification Options That Match Your Level of Expertise</h2>
+         <h4 class='fs-5'>Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, boost credibility, and inspire others through your knowledge.</h4>
+         <button class='border-0 bg-transparent d-flex justify-content-start'>
+            <a href="" class="bg-danger text-white  text-decoration-none px-4 py-2 rounded-2"> APPLY NOW</a>
+         </button>
+      </div>
+      <div class="img-container  ">
+          <img  width='400' height='500' class="img-fluid border border-4 shadow border-danger rounded-pill" src="<?php echo get_theme_file_uri('/assets/certifications/icons/certificate.webp'); ?>" alt="i.Flex Fitness Certifications" >
+      </div>
     </div>
-   <section class="vh-50 container  d-flex justify-content-start border-bottom border-1 align-items-center">
-        <div 
-        class=" d-flex py-4   w-md-75  flex-column justify-content-center align-items-start gap-4">
+   
+   
+   <div 
+        class=" d-flex py-4    w-100  flex-column justify-content-center align-items-start gap-4">
           <h3 class="fs-2  fw-bold  text-color text-start">
                 What is i.Flex Certification Program?
           </h3>
@@ -32,7 +30,7 @@
            
         </div>
         
-      </section> 
+   </section> 
       
       <!-- who is it for section -->
    <section class="d-flex container px-2  pb-2 pt-5 gap-2 gap-lg-5  flex-column justify-content-center align-items-start">

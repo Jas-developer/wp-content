@@ -23,8 +23,10 @@
 By earning this certification,</p>
         </div>
         <div class="button-content">
-            <button class="btn bg-danger fw-semibold text-white">
-                LEARN MORE
+            <button class="bg-transparent border border-0 fw-semibold text-white">
+                <a href="<?php echo get_permalink(35); ?>" class="text-decoration-none text-white px-4 bg-danger  py-2">
+                    LEARN MORE
+                </a>
             </button>
         </div>
     </div>
