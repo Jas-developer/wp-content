@@ -21,7 +21,7 @@
          <h1 class="text-light fw-bold fs-1 flex-column d-flex justify-content-center align-items-start ">
            <span>YOU ARE MEANT</span>
            <span>FOR GREATNESS,</span>
-           <span><span class="text-danger">I.FLEX</span> DO YOU?</span>
+           <span><span class="text-danger">i.FLEX</span> DO YOU?</span>
          </h1>
         <!-- c-#2 | email container -->
          <div class="d-flex flex-row justify-content-start gap-1 align-items-center">
