@@ -10,7 +10,7 @@
   </section>
   <section class="w-100 d-flex flex-lg-row gap-2 flex-column">
      <div class="single-class-content py-5 py-lg-0 d-flex border w-100 container  justify-content-end align-items-center">
-        <div class=" single-class-cards container ">
+        <div class=" single-class-cards ">
               <div class="row row-cols-1 row-cols-md-2">
                 <?php 
                
