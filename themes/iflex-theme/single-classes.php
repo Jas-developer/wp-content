@@ -8,7 +8,7 @@
       <a href="" class='text-white bg-danger px-4 py-2  rounded-1 fw-semibold text-decoration-none'>JOIN NOW</a>
     </button>
   </section>
-  <section class="w-100 d-flex flex-md-row gap-2 flex-column">
+  <section class="w-100 d-flex flex-lg-row gap-2 flex-column">
      <div class="single-class-content py-5 py-lg-0 d-flex border w-100 container  justify-content-end align-items-center">
         <div class=" single-class-cards  d-flex flex-column ">
             <div class=" d-flex flex-wrap h-100  position-relative">
@@ -46,7 +46,7 @@
      <div class="single-class-image d-flex p-1 p-md-0 position-relative  d-flex justify-content-center align-items-center">
         <?php $image_url = get_field('class_image');
            if($image_url){ ?>
-              <img class='img-fluid' src="<?php echo esc_url($image_url['url']); ?>" alt="<?php echo get_the_title(); ?>" >
+              <img class='img-fluid '  src="<?php echo esc_url($image_url['url']); ?>" alt="<?php echo get_the_title(); ?>" >
           <?php  };
         ?>
      </div>
