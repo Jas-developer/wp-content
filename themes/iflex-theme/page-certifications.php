@@ -24,8 +24,7 @@
                 What is i.Flex Certification Program?
           </h3>
            <p class='text-start text-color fs-5 z-2 fw-normal'>
-            Take your training career to the next level. Our certification options are tailored to your level of expertise, helping you gain recognition, 
-            boost credibility, and inspire others through your knowledge.
+            The i.Flex Certification Program is designed to elevate your training career by providing tailored certification pathways that match your level of expertise. Whether you're just beginning or already an experienced professional, the program helps you gain recognition, strengthen your credibility, and expand your impact. Through i.Flex, you’ll not only validate your skills but also empower and inspire others with the knowledge you’ve mastered.
            </p>
            
         </div>
