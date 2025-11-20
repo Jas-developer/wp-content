@@ -46,7 +46,7 @@
   =========================== -->
   <section class="container position-relative">
     <?php get_template_part( 'template-parts/about-us'); ?>
-    <hr>
+    <hr class="text-dark">
   </section>
   
   <!-- PRICING -->
