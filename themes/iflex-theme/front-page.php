@@ -50,9 +50,10 @@
   </section>
   
   <!-- PRICING -->
-   <section class="container position-relative mb-4 d-flex flex-column gap-5 flex-lg-row">
+   <section class="container position-relative mb-4  gap-lg-2 flex-lg-row">
     
-    <div class="flex-column position-relative  px-lg-5 align-items-start d-flex  justify-content-center">
+    <div class="row">
+       <div id="pricing-heading-container" class="flex-column col-12 col-lg-4  position-relative   px-lg-5 align-items-start d-flex  justify-content-center">
    
         <h2 class="fs-1 fw-bold text-danger ">
         Our Rates & Pricing
@@ -65,7 +66,10 @@
         <a href="" class="text-decoration-none text-white bg-danger px-4 py-2">BOOK NOW</a>
       </button>
     </div>
-  <?php get_template_part('template-parts/our-pricing'); ?>
+   <div class="pricing-content-container col-12 col-lg-8 p-0 px-2 mt-5 mt-lg-2">
+     <?php get_template_part('template-parts/our-pricing'); ?>
+   </div>
+    </div>
    </section>
   
 </main>
