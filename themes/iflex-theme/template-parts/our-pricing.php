@@ -1,5 +1,20 @@
-
-<div class="d-flex flex-column flex-md-row gap-3 ">
+<div class="row gap-5 gap-lg-0">
+    
+ <div class="d-flex justify-content-center flex-column align-items-start col-lg-5">
+   
+        <h2 class="fs-1 fw-bold text-danger ">
+        Our Rates & Pricing
+      </h2>
+      <p class="fs-5">
+        Our Rates is still subject for discount if you visit our Ma'a Branch
+      </p>
+     
+      <button class="bg-transparent border border-0 p-0 m-0">
+        <a href="" class="text-decoration-none text-white bg-danger px-4 py-2">BOOK NOW</a>
+      </button>
+    </div>
+<!-- second col -->
+<div class="d-flex flex-column flex-md-row gap-3 col-lg-7">
     <div class="d-flex flex-column gap-3">
         <div class='d-flex flex-column'>
             <h4 class="px-2 fs-2">GYM RATES</h4>
@@ -77,4 +92,5 @@
         </div>
     </div>
     
+</div>
 </div>
