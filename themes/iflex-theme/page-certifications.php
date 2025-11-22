@@ -21,7 +21,7 @@
    <div 
         class=" d-flex py-4    w-100  flex-column justify-content-center align-items-start gap-4">
           <h3 class="fs-2  fw-bold  text-color text-start">
-                What is i.Flex Certification Program?
+                What is i.Flex Certifications Program?
           </h3>
            <p class='text-start text-color fs-5 z-2 fw-normal'>
             The i.Flex Certification Program is designed to elevate your training career by providing tailored certification pathways that match your level of expertise. Whether you're just beginning or already an experienced professional, the program helps you gain recognition, strengthen your credibility, and expand your impact. Through i.Flex, you’ll not only validate your skills but also empower and inspire others with the knowledge you’ve mastered.
