@@ -5,7 +5,7 @@
 
 <main class="single-trainer-wrapper   mt-10 mt-lg-10">
 
-  <div class="container">
+  <div class="container ">
     <div class="row gap-lg-5">
       
       <div class="col-12 col-lg-4 d-flex justify-content-start align-items-start flex-column gap-2">

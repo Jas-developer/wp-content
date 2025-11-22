@@ -2,7 +2,7 @@
  <?php get_header(); ?>
  <main class="container-fluid flex-column pt-5 mb-4 d-flex justify-content-center align-items-center  p-0 page ">
     
-   <section class="vh-50 container flex-column mt-7    d-flex justify-content-start border-bottom border-1 align-items-center">
+   <section class="vh-50 container flex-column mt-lg-10 mt-8   d-flex justify-content-start border-bottom border-1 align-items-center">
       
     <div class="row row-cols-1 row-cols-lg-2  w-100">
       <div class="text-content  d-flex align-items-start justify-content-center flex-column gap-2">

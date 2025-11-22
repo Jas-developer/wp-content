@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 <?php get_header(); ?>
 
-<main class="certified-trainer-wrapper mt-7 mt-lg-9">
+<main class="certified-trainer-wrapper pt-5 mt-lg-10 mt-8">
   <div class="container">
 
     <?php
