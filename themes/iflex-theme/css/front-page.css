@@ -1,328 +1,319 @@
-  /* 🌱 Base styles — apply to all (mobile first) */
+/* 🌱 Base styles — apply to all (mobile first) */
 
-
-
-
-.cert-img-container{
+.cert-img-container {
   width: 100%;
 }
 
-.cert-main-img-container{
+.cert-main-img-container {
   width: 100%;
 }
 
-
-  .be-cert-image{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-  }
-  .be-cert-image-main
-  {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-  } 
-  .dash-class{
-    transform: rotate(60deg);
-  }
-  .classes-header{
-    font-size: 3rem;
-  }
-.class-card{
-  height: 400px;
+.be-cert-image {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
-.class-img{
+.be-cert-image-main {
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: center;
 }
-  .about-us-container {
-    padding-bottom: 40px;
+.dash-class {
+  transform: rotate(60deg);
+}
+.classes-header {
+  font-size: 3rem;
+}
+.class-card {
+  height: 400px;
+  width: 100%;
+}
+.class-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.about-us-container {
+  padding-bottom: 40px;
+}
+
+.floating-info-container {
+  margin-top: -10px;
+  height: auto;
+  position: relative !important;
+  z-index: 1 !important;
+}
+.logo-color {
+  color: #f91b19;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+#hero-section {
+  width: 100%;
+  height: 62vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  background-attachment: fixed;
+  position: relative;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: 10px solid rgb(194, 15, 15);
+}
+
+#hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent),
+    linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+
+  pointer-events: none;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 1; /* on top of text if higher than content */
+}
+
+#hero-section-heading {
+  margin-top: 50px;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #f11b1b;
+  text-align: start;
+
+  background-size: cover;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+#hero-section-flex {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.for-greatness {
+  font-size: 4.5rem;
+  font-weight: 900rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* small screen */
+#marco-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* from ipad mini screen */
+@media (min-width: 600px) {
+  .classes-header {
+    font-size: 4rem;
+  }
+  .cert-img-container {
+    width: 100%;
   }
 
+  .be-cert-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .be-cert-image-main {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .cert-main-img-container {
+    width: 100%;
+  }
   .floating-info-container {
     margin-top: -10px;
-    height: auto;
+    height: 200px;
     position: relative !important;
     z-index: 1 !important;
+    animation: float 3s ease-in-out infinite;
   }
-  .logo-color {
-    color: #f91b19;
+  .class-card {
+    height: 400px;
+    width: 100%;
   }
-  .visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
+  #hero-section-heading {
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: #f11b1b;
   }
-
   #hero-section {
     width: 100%;
-    height: 62vh;
+    height: 64vh;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
     background-attachment: fixed;
     position: relative;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom:10px solid rgb(194, 15, 15);
+    background-color: black;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+  #hero-section::after {
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+  #marco-img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* 📱 Small to Medium screens (≥ 481px) */
+@media (min-width: 481px) {
+  #hero-section-flex {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* 💻 Large screens (≥ 1024px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .classes-header {
+    font-size: 4rem;
+  }
+  .cert-img-container {
+    width: 40%;
   }
 
-  #hero-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  .be-cert-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .be-cert-image-main {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .cert-main-img-container {
+    width: 60%;
+  }
+  .class-card {
+    height: 500px;
+    width: 100%;
+  }
+  #hero-section-img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent),linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
-  
-    pointer-events: none;
-     border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-    z-index: 1; /* on top of text if higher than content */
+  }
+  #marco-img {
+    width: 550px;
+    height: 500px;
+  }
+  .class-img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .about-us-container {
+    padding-bottom: 60px;
+  }
+
+  #hero-section {
+    background-repeat: no-repeat;
+    background-position: 15% top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 85vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  #hero-section::after {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
   }
 
   #hero-section-heading {
-    margin-top: 50px;
-    font-size: 3.2rem;
+    font-size: 7rem;
+    letter-spacing: 0.7rem;
     font-weight: 900;
     color: #f11b1b;
+    text-align: left;
+    width: 100%;
     text-align: start;
-
-    background-size: cover;
   }
-  .cursor-pointer {
-    cursor: pointer !important;
-  }
+}
 
-  #hero-section-flex {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: 900;
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-
-  .for-greatness {
+/* desktop monitor */
+@media (min-width: 1400px) {
+  .classes-header {
     font-size: 4.5rem;
-    font-weight: 900rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
-  /* small screen */
-  #marco-img {
-    width: 450px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+  .cert-img-container {
+    width: 40%;
   }
-
-  /* from ipad mini screen */
-  @media (min-width: 600px) {
-     .classes-header{
-    font-size: 4rem;
-  }
-    .cert-img-container{
-  width: 100%;
-  
-}
-
-.be-cert-image{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-  }
-    .be-cert-image-main
-  {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    object-position: center;
-  } 
-
-.cert-main-img-container{
-  width: 100%;
-}
-    .floating-info-container {
-      margin-top: -10px;
-      height: 200px;
-      position: relative !important;
-      z-index: 1 !important;
-      animation: float 3s ease-in-out infinite;
-    }
-    .class-card{
-  height: 400px;
-  width: 100%;
-}
-#hero-section-heading {
-      font-size: 6.5rem;
-      font-weight: 700;
-      color: #f11b1b;
-    }
-    #hero-section {
-      width: 100%;
-      height: 64vh;
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: auto;
-      background-attachment: fixed;
-      position: relative;
-      background-color: black;
-      border-bottom-left-radius: 70px;
-      border-bottom-right-radius: 70px;
-    }
-    #hero-section::after{
-      border-bottom-left-radius: 70px;
-      border-bottom-right-radius: 70px;
-    }
-    #marco-img {
-      width: 400px;
-      height: 350px;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
-  /* 📱 Small to Medium screens (≥ 481px) */
-  @media (min-width: 481px) {
-    #hero-section-flex {
-      margin-top: 10px;
-      font-size: 2rem;
-      font-weight: 900;
-      text-align: start;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-  }
-
-  /* 💻 Large screens (≥ 1024px) */
-  @media (min-width: 992px) and (max-width: 1399px) {
-     .classes-header{
-    font-size: 4rem;
-  }
-    .cert-img-container{
-  width: 40%;
-}
-
-    .be-cert-image{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-  }
-    .be-cert-image-main
-  {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    object-position: center;
-  } 
-    .cert-main-img-container{
+  .cert-main-img-container {
     width: 60%;
-    }
-    .class-card{
-  height: 500px;
-  width: 100%;
-}
-    #hero-section-img {
-      width: 100%;
-      height: 100%;
-    }
-    #marco-img {
-      width: 550px;
-      height: 500px;
-    }
-    .class-img{
-    width: 100%;
-     height: 350px;
-   }
-
-    .about-us-container {
-      padding-bottom: 60px;
-    }
-
-    #hero-section {
-      background-repeat: no-repeat;
-      background-position: 15% top;
-      background-size: cover;
-      background-attachment: fixed;
-      width: 100%;
-      height: 85vh;
-      border-bottom-left-radius: 100px;
-      border-bottom-right-radius: 100px;
-    }
-    #hero-section::after{
-      border-bottom-left-radius: 100px;
-      border-bottom-right-radius: 100px;
-    }
-
-    #hero-section-heading {
-      font-size: 7rem;
-      letter-spacing: 0.7rem;
-      font-weight: 900;
-      color: #f11b1b;
-      text-align: left;
-      width: 100%;
-      text-align: start;
-    }
   }
-
-  /* desktop monitor */
-  @media (min-width: 1400px) {
-     .classes-header{
-    font-size: 4.5rem;
-  }
-    .cert-img-container{
-  width: 40%;
-}
-.cert-main-img-container{
-  width: 60%;
-}
-    .be-cert-image{
+  .be-cert-image {
     width: 100%;
     height: 245px;
     object-fit: cover;
     object-position: center;
   }
-    .be-cert-image-main
-  {
+  .be-cert-image-main {
     width: 100%;
     height: 500px;
     object-fit: cover;
     object-position: center;
-  } 
-    .class-card{
-  height: 500px;
-  width: 100%;
-}
-     .class-img{
+  }
+  .class-card {
+    height: 500px;
     width: 100%;
-     height: 380px;
-   }
-    #hero-section {
-      background-repeat: no-repeat;
-      background-position: 15% top;
-      background-size: cover;
-      background-attachment: fixed;
-      width: 100%;
-      height: 60vh;
-      border-bottom-left-radius: 150px;
-     border-bottom-right-radius: 150px;
-    }
-    #hero-section::after{
-      border-bottom-left-radius: 150px;
-     border-bottom-right-radius: 150px;
-    }
-    #hero-section-heading {
+  }
+  .class-img {
+    width: 100%;
+    height: 380px;
+  }
+  #hero-section {
+    background-repeat: no-repeat;
+    background-position: 15% top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+  #hero-section::after {
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+  #hero-section-heading {
     margin-top: 10px;
     font-size: 9rem;
     font-weight: 900;
@@ -332,32 +323,31 @@
     background-size: cover;
   }
 
-    #marco-img {
-      width: 650px;
-      height: 550px;
-      object-fit: cover;
-      object-position: center;
-    }
-
+  #marco-img {
+    width: 650px;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
   }
+}
 
-  /* custom utility class */
-  /* Smooth floating animation */
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+/* custom utility class */
+/* Smooth floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  .custom-hr {
-    height: 2px; /* makes it thicker */
-    opacity: 1; /* ensures full color visibility */
-    border: none; /* removes default border */
-    background-color: #f11b1b;
-  }
+.custom-hr {
+  height: 2px; /* makes it thicker */
+  opacity: 1; /* ensures full color visibility */
+  border: none; /* removes default border */
+  background-color: #f11b1b;
+}

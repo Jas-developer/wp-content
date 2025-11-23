@@ -1,6 +1,6 @@
-<div class="row gap-5 gap-lg-0">
+<div class="row ">
     
- <div class="d-flex justify-content-center flex-column align-items-start col-lg-5">
+ <div class="d-flex justify-content-center flex-column align-items-start mt-5 mt-lg-0 col-lg-5">
    
         <h2 class="fs-1 fw-bold text-danger ">
         Our Rates & Pricing
@@ -14,7 +14,7 @@
       </button>
     </div>
 <!-- second col -->
-<div class="d-flex flex-column flex-md-row gap-3 col-lg-7">
+<div class="d-flex flex-column flex-md-row gap-3 col-lg-7 mt-5 mt-0">
     <div class="d-flex flex-column gap-3">
         <div class='d-flex flex-column'>
             <h4 class="px-2 fs-2">GYM RATES</h4>

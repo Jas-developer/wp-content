@@ -50,13 +50,8 @@
   </section>
   
   <!-- PRICING -->
-   <section class="container d-fle position-relative mb-4  gap-lg-2 flex-lg-row">
-    
-   
-      
-  
+   <section class="container position-relative mb-5">
      <?php get_template_part('template-parts/our-pricing'); ?>
-
    </section>
   
 </main>
