@@ -13,6 +13,7 @@ Text Domain: i-flex-fitness
 /* Force global body font */
 body, html {
     font-family: 'Montserrat', sans-serif !important;
+    background-color: #F3F3F3;
 }
 
 /* Headings */

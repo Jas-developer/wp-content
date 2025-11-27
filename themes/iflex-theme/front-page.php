@@ -34,7 +34,7 @@
   <div class="  position-relative">
 
     
-    <div class="rounded position-relative  h-100  justify-content-center align-items-center px-3 pt-5  w-100 bg-white container">
+    <div class="rounded position-relative  h-100  justify-content-center align-items-center px-3 pt-5  w-100  container">
       <?php get_template_part( 'template-parts/classes'); ?>
     </div>
 

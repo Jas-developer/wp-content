@@ -41,7 +41,7 @@
     <hr class="text-light">
 
     <!-- Certified trainers grid -->
-    <div id="trainers-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+    <div id="trainers-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 ">
       <?php if ( $certified_trainers->have_posts() ) { ?>
 
         <?php while ( $certified_trainers->have_posts() ) {
@@ -50,7 +50,7 @@
           <div class="col  d-flex justify-content-center">
             <div onclick="window.location.href='<?php echo esc_url(get_the_permalink()) ?>'"
                  style="cursor:pointer;"
-             class="certified-trainer-card   h-100 shadow overflow-hidden d-flex flex-column justify-content-center align-items-center px-1  pb-5 gap-4">
+             class="certified-trainer-card   h-100 shadow overflow-hidden d-flex flex-column justify-content-center align-items-center   pb-5 ">
 
               <!-- Trainer image -->
               <div class=" overflow-hidden  position-relative w-100">
@@ -59,22 +59,23 @@
                      src="<?php echo esc_url($imageUrl['url']); ?>"
                      alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
-
-              <!-- Trainer content -->
-              <div class="d-flex flex-column gap-1 w-100 justify-content-center align-items-start  px-2">
-                <span class="trainer-level text-light px-2 py-1 rounded-pill px-4 text-center fw-bold fs-6 border border-0  bg-danger">
+<span class="trainer-level text-light px-2 py-1 w-100 px-4 text-center fw-bold fs-6 border border-0  bg-danger">
                   <?php echo esc_html(get_field('trainer_level')); ?>
                 </span>
+              <!-- Trainer content -->
+              <div class="d-flex flex-column gap-1 w-100 justify-content-center align-items-start mt-3 px-2">
+                
                 <span class="trainer-name fs-4 text-dark fw-bold"><?php the_title(); ?></span>
                 <span class="trainer-address fs-6 text-secondary">
                   <?php echo esc_html(get_field('trainer_address')); ?>
                 </span>
                 <!-- button -->
                <button onclick="window.location.href='<?php echo esc_url(get_permalink()); ?>'"
-                       class="d-flex bg-transparent align-items-center gap-2 w-50 justify-content-start"
-                       style="border: none; border-bottom: 2px solid #dc3545;">
-                       <span class="text-danger fw-semibold mb-1">PROFILE</span>
-                       <span class="dashicons dashicons-arrow-right-alt fs-5 text-danger"></span>
+                       class="d-flex bg-danger align-items-center gap-2  p-3 rounded-pill text-white border border-0  justify-content-start"
+                       >
+                       VIEW
+                      <span class="dashicons dash-class dashicons-arrow-up-alt"></span>
+                     
                </button>
 
               </div>
