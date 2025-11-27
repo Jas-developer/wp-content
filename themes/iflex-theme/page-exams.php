@@ -15,7 +15,7 @@ $exams = new WP_Query($args);
 if($exams->have_posts()){ 
  $trainer_level =  (string)get_user_meta( get_current_user_id(), 'trainer_level', true); 
  $levels = array('Level 1 - Functional', 'Level 2 - Advanced', 'Level 3 - Expert');
-  echo '<div style="height:70vh" id="exams-container" class="container d-flex justify-content-center align-items-center">';
+  echo '<div style="height:70vh" id="exams-container" class="container  d-flex justify-content-center align-items-center">';
    echo '<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 justify-content-center g-1 w-100">';
 
     while($exams->have_posts()){ $exams->the_post();  $exam_level = (string)get_field('for_trainer_level_'); ?>

@@ -1,11 +1,19 @@
-/* configure the logo size */
-@media (max-width: 1024px) {
-  .iflex-logo {
-    width: 170px;
-    height: auto;
-  }
+#header-container-v2 {
+  background: linear-gradient(
+    to bottom,
+    rgb(194, 16, 16) 0%,
+    rgba(150, 7, 7, 0.8) 99%,
+    rgba(224, 15, 15, 0) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
+.bg-red{
+  background-color: rgb(195, 29, 29);
+}
 /* buttons, Nav, Text */
 #login-button {
   background-color: E84444 !important;
@@ -34,6 +42,19 @@
   top: 0;
 }
 
+#header-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 70%,
+    rgba(224, 15, 15, 0) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 /* Shown state on small screens */
 .nav-hidden.show {
   opacity: 1;
@@ -49,9 +70,20 @@
     rgba(224, 15, 15, 0) 100%
   );
 }
+.bg-leniar-right {
+  background: linear-gradient(
+    to right,
+    rgb(87, 4, 4) 0%,
+    rgba(193, 9, 9, 0.8) 70%,
+    rgba(224, 15, 15, 0) 100%
+  );
+}
+.bg-red {
+  background-color: rgba(150, 7, 7, 0.8);
+}
 /* On large screens (lg and up), make it always visible and in a row */
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   #header-container {
     background: linear-gradient(
       to bottom,
@@ -65,18 +97,7 @@
     right: 0;
   }
 
-  #header-container-v2 {
-    background: linear-gradient(
-      to bottom,
-      rgb(87, 4, 4) 0%,
-      rgba(150, 7, 7, 0.8) 70%,
-      rgba(224, 15, 15, 0) 100%
-    );
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+  
 
   .nav-hidden {
     opacity: 1;

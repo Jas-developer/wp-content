@@ -3,24 +3,25 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> >
   <?php wp_body_open(); ?>
    
-  <header id="<?php if(is_page(37) || is_singular( 'certified_trainers' ) || is_page(16) || is_page(35)) : echo 'header-container-v2'; else: echo 'header-container-v2'; endif;
+  <header id="<?php if(!is_front_page(  )) : echo 'header-container-v2'; else: echo 'header-container'; endif;
      ?>" class="overflow-hidden z-3">
   
-   <div class="container overflow-hidden">
-    <nav class="row align-items-center py-3 d-lg-fixed">
+   <div class="container-fluid  overflow-hidden">
+    <nav class="row align-items-center  py-3 d-lg-fixed">
     <!-- LOGO AND HAMBURGER BUTTON  -->
     <div class="container col-lg-4 col-12">
         <!-- LARGE SCREEN - LOGO -->
-          <div class="d-none align-items-center d-lg-flex">
+          <div class="d-none align-items-center   d-lg-flex">
               <?php 
                 if(has_custom_logo()){
                   the_custom_logo();
@@ -39,13 +40,13 @@
          </div>
          <div class="button-container align-items-center  justify-content-end col-6 d-flex ">
            <button id="toggle-button" class="border-0 position-relative bg-transparent">
-           <span style="margin-left:-10px; font-size:25px;" class="dashicons dashicons-menu-alt3 text-danger position-absolute top-50 start-50 translate-middle z-3"></span>
+           <span style="margin-left:-10px; font-size:25px;" class="dashicons dashicons-menu-alt3 text-light position-absolute top-50 start-50 translate-middle z-3"></span>
            </button>
          </div>
       </div>
     </div>
   <!-- NAVIGATION LINKS  -->
-   <div id="nav-items" class="nav-hidden col-lg-8 z-2">
+   <div id="nav-items" class="nav-hidden pe-lg-5 col-lg-8 z-2">
       <ul class="list-unstyled  gap-lg-4 fw-semibold gap-3 nav flex-lg-row flex-column align-items-center">
         <li><a href="<?php echo home_url(); ?>" 
          class="<?php if(is_front_page()): 
@@ -70,7 +71,7 @@
               bg-danger border shadow-md fw-semibold text-light py-2 shadow-sm  px-5 rounded-pill">
               EXAMS
             </button>
-            <button class="<?php if(is_page(37) || is_singular( 'certified_trainers' )) : echo 'text-light'; else : echo 'text-danger'; endif;?> fw-bold cursor-pointer border border-0 bg-transparent" 
+            <button class="text-light fw-bold cursor-pointer border border-0 bg-transparent" 
             onclick="window.location='<?php echo wp_logout_url(home_url()); ?>'">Logout</button>
            </div> 
         <!-- show only if user is not logged in -->
@@ -83,9 +84,5 @@
    </div>
 </nav>
    </div>
-   <hr class="<?php if(is_page( 16 ) || is_singular( 'certified_trainers' )){
-    echo 'd-md-none d-block text-gray w-100';
-   } else {
-    echo 'd-none';
-   } ?>">
+   
 </header>

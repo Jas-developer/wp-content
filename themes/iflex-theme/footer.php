@@ -1,5 +1,13 @@
-<footer  class="mt-lg-10  mt-8">
-  <div class="footer-wrapper py-lg-5 py-4 container-fluid bg-leniar">
+<footer class="<?php
+  if(!is_page(35) AND !is_front_page() AND !is_page(16)) {
+    echo 'mt-lg-10 mt-8';
+  } else {
+    echo '';
+  }
+?>">
+ 
+  <div class="footer-wrapper py-lg-5 py-4 container-fluid  bg-leniar-right">
+    
     <div class="container">
         <!-- 
          - two rows on md to lg screen
@@ -13,7 +21,7 @@
          <h1 class="text-light fw-bold fs-1 flex-column d-flex justify-content-center align-items-start ">
            <span>YOU ARE MEANT</span>
            <span>FOR GREATNESS,</span>
-           <span><span class="text-danger">I.FLEX</span> DO YOU?</span>
+           <span><span class="text-danger">i.FLEX</span> DO YOU?</span>
          </h1>
         <!-- c-#2 | email container -->
          <div class="d-flex flex-row justify-content-start gap-1 align-items-center">
