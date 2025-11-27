@@ -62,7 +62,7 @@
 
               <!-- Trainer content -->
               <div class="d-flex flex-column gap-1 w-100 justify-content-center align-items-start  px-2">
-                <span class="trainer-level text-light px-2 py-1 rounded-pill px-4 text-center fw-bold fs-6 border border-0 shadow bg-danger">
+                <span class="trainer-level text-light px-2 py-1 rounded-pill px-4 text-center fw-bold fs-6 border border-0  bg-danger">
                   <?php echo esc_html(get_field('trainer_level')); ?>
                 </span>
                 <span class="trainer-name fs-4 text-dark fw-bold"><?php the_title(); ?></span>
