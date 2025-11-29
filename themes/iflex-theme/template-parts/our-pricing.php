@@ -6,7 +6,7 @@
         Our Rates & Pricing
       </h2>
       <p class="fs-5">
-        Our Rates is still subject for discount if you visit our Ma'a Branch
+       Our rates are still eligible for a discount if you visit our Ma'a branch.
       </p>
      
       <button class="bg-transparent border border-0 p-0 m-0">
