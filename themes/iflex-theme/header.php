@@ -52,21 +52,21 @@
          class="<?php if(is_front_page()): 
           echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">HOME</a>
         </li>
-        <li><a href="<?php echo get_permalink(35); ?>" 
+        <li><a href="<?php echo esc_url(get_permalink(35)); ?>" 
           class="<?php if(is_page(35)): 
           echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFICATIONS</a>
         </li>
-        <li><a href="<?php echo get_permalink(37)?>" 
+        <li><a href="<?php echo esc_url(get_permalink(37));?>" 
           class="<?php if(is_page(37) || is_singular( 'certified_trainers' )): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
         </li>
        <!-- show only if user is logged in  -->
         <?php if(is_user_logged_in()): ?> 
-          <li><a href="<?php echo get_permalink(16); ?>" class="<?php  if(is_page(16)): echo 'custom-underline'; else: echo 'text-decoration-none';
+          <li><a href="<?php echo esc_url(get_permalink(16)); ?>" class="<?php  if(is_page(16)): echo 'custom-underline'; else: echo 'text-decoration-none';
               endif;  ?> d-inline-block transition-transform hover-scale-105 text-light">MODULES</a>
           </li>
            <div class="logged-in-container d-flex gap-4  justify-content-center align-items-center">
             <button id="login-button" 
-              onclick="window.location.href='<?php echo get_permalink(39) ?>'"
+              onclick="window.location.href='<?php echo esc_url(get_permalink(39)); ?>'"
               class="<?php if(is_page(39)): echo 'border-2'; else: echo 'border-0'; endif; ?> 
               bg-danger border shadow-md fw-semibold text-light py-2 shadow-sm  px-5 rounded-pill">
               EXAMS
@@ -76,7 +76,7 @@
            </div> 
         <!-- show only if user is not logged in -->
           <?php else:  ?>
-            <li><a href="#" class="text-decoration-none text-light">JOIN US</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(146)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
             <button id="login-button" onclick="window.location.href='<?php echo wp_login_url() ?>'"
             class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
         <?php endif; ?>
