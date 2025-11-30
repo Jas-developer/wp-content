@@ -59,6 +59,7 @@
         <li><a href="<?php echo esc_url(get_permalink(37));?>" 
           class="<?php if(is_page(37) || is_singular( 'certified_trainers' )): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
         </li>
+         <li><a href="<?php echo esc_url(get_permalink(146)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
        <!-- show only if user is logged in  -->
         <?php if(is_user_logged_in()): ?> 
           <li><a href="<?php echo esc_url(get_permalink(16)); ?>" class="<?php  if(is_page(16)): echo 'custom-underline'; else: echo 'text-decoration-none';
@@ -76,7 +77,7 @@
            </div> 
         <!-- show only if user is not logged in -->
           <?php else:  ?>
-            <li><a href="<?php echo esc_url(get_permalink(146)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
+           
             <button id="login-button" onclick="window.location.href='<?php echo wp_login_url() ?>'"
             class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
         <?php endif; ?>
