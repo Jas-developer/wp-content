@@ -76,7 +76,7 @@
            </div> 
         <!-- show only if user is not logged in -->
           <?php else:  ?>
-            <li><a href="<?php echo esc_url(get_permalink(113)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(146)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
             <button id="login-button" onclick="window.location.href='<?php echo wp_login_url() ?>'"
             class="bg-danger border border-0 text-light py-2 shadow-sm  px-4 rounded-1">LOGIN</button>
         <?php endif; ?>

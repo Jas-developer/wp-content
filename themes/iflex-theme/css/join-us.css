@@ -2,6 +2,10 @@
     height: 50vh;
 }
 
+.why-join-us-container{
+    background-color: #D9D9D9;
+}
+
 @media(min-width:600px){
 .join-us-container{
     height: 60vh;
