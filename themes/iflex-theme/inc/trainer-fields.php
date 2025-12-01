@@ -23,7 +23,12 @@ function iflex_trainer_level($user){ ?>
             <select name="trainer_level" id="trainer_level">
                 <?php 
                 
-                  $saved_level = ($user) ?  get_user_meta( $user->ID, 'trainer_level', true ) : '';
+                  $saved_level = (is_object($user) && isset($user->ID)) ?  get_user_meta( $user->ID, 'trainer_level', true ) : array();
+                  
+                  if(empty($saved_level)){
+                    $saved_level = 'In progress';
+                  }
+                  
 
                   foreach($levels as $level){ ?>
                         <option value="<?php echo esc_attr($level)?>" <?php selected( $saved_level, $level, true )?>>
@@ -31,7 +36,7 @@ function iflex_trainer_level($user){ ?>
                         </option>
                   <?php }
                 ?>
-            </select>
+            </select> 
             
         </td>
 
@@ -41,14 +46,17 @@ function iflex_trainer_level($user){ ?>
       <td>
             <!-- exam taken -->
             <?php 
-              $saved_levels_taken = ($user) ? (array) get_user_meta( $user->ID, 'levels_taken', true ) : '';
+              $saved_levels_taken = (is_object($user) && isset($user->ID)) ? (array) get_user_meta( $user->ID, 'levels_taken', true ) : array();
+              if(empty($saved_levels_taken)){
+                    $saved_levels_taken = array('In progress');
+                  }
               foreach($levels as $level ){ ?>
                  <label>
                     <input type="checkbox" 
                            name="levels_taken[]" 
-                           value="<?php echo esc_html($level); ?>" 
+                           value="<?php echo esc_attr($level); ?>" 
                            <?php checked(in_array($level, $saved_levels_taken)); ?>>
-                    <?php echo esc_html($level); ?>
+                    <?php echo esc_attr($level); ?>
                   </label><br>
              <?php }
             
