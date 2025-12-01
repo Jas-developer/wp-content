@@ -59,7 +59,7 @@
         <li><a href="<?php echo esc_url(get_permalink(37));?>" 
           class="<?php if(is_page(37) || is_singular( 'certified_trainers' )): echo 'custom-underline'; else: echo 'text-decoration-none'; endif; ?> text-light">CERTIFIED TRAINERS</a>
         </li>
-         <li><a href="<?php echo esc_url(get_permalink(146)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
+         <li><a href="<?php echo esc_url(get_permalink(157)); ?>" class="text-decoration-none text-light">JOIN US</a></li>
        <!-- show only if user is logged in  -->
         <?php if(is_user_logged_in()): ?> 
           <li><a href="<?php echo esc_url(get_permalink(16)); ?>" class="<?php  if(is_page(16)): echo 'custom-underline'; else: echo 'text-decoration-none';
