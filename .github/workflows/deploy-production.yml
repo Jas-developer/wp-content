@@ -34,7 +34,8 @@ jobs:
         uses: SamKirkland/web-deploy@v1
         with:
           target-server: 217.196.55.174
+          source-path: themes/iflex-theme
           remote-user: u222328741
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: 65002
-          destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content/themes/iflex-theme
+          destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content
