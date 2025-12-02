@@ -17,8 +17,8 @@
       <h1 id="hero-section-heading" class="position-relative  z-2"><span class="text-white">i.</span>Flex <span class="text-white">Fitness</span></h1>
       <div class="w-100 d-flex gap-2 flex-column">
          <h3 class="fw-semibold text-white z-2">Training Ground for Greatness!</h3>
-        <a class="btn btn-danger z-2 px-5 border border-0 text-light fw-bold border-danger w-auto align-self-start">
-          JOIN NOW
+        <a class="btn btn-danger z-2 px-5 border border-0 text-light fw-bold  w-auto align-self-start">
+         <span>JOIN NOW</span> <span class="dashicons dashicons-arrow-right-alt2"></span>
         </a>
       </div>
     </div>
