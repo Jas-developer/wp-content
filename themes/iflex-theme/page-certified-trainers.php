@@ -50,7 +50,7 @@
           <div class="col  d-flex justify-content-center">
             <div onclick="window.location.href='<?php echo esc_url(get_the_permalink()) ?>'"
                  style="cursor:pointer;"
-             class="certified-trainer-card   h-100 shadow overflow-hidden d-flex flex-column justify-content-center align-items-center   pb-5 ">
+             class="certified-trainer-card   h-100 shadow overflow-hidden d-flex flex-column justify-content-start align-items-center   pb-5 ">
 
               <!-- Trainer image -->
               <div class=" overflow-hidden  position-relative w-100">
