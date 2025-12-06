@@ -45,8 +45,6 @@ jobs:
 
           # Deploy to theme directory
           destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content
-
-          # Do NOT deploy dev folders
           exclude: |
             **/node_modules/**
             **/src/**
