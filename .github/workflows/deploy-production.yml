@@ -45,6 +45,8 @@ jobs:
 
           # Deploy to theme directory
           destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content/themes/iflex-theme
+          # prevent nested folder
+          strip-components: 1
           exclude: |
             **/node_modules/**
             **/src/**
