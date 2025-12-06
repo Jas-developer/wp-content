@@ -45,14 +45,4 @@ jobs:
 
           # Deploy to theme directory
           destination-path: /home/u222328741/domains/iflexgym.site/public_html/wp-content/themes
-          # prevent nested folder
-          exclude: |
-            **/node_modules/**
-            **/src/**
-            **/.git/**
-            **/.github/**
-            **/.vscode/**
-            **/package.json
-            **/package-lock.json
-            **/webpack.config.js
-            **/*.map
+          
