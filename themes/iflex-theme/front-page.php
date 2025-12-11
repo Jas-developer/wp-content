@@ -48,8 +48,16 @@
     <?php get_template_part( 'template-parts/about-us'); ?>
     <hr class="text-dark">
   </section>
-  
-  <!-- PRICING -->
+  <!-- ==================
+  OUR COACHES SECTION
+  =======================-->
+ <section class="our-coaches-wrapper">
+   <?php
+     get_template_part('template-parts/our-coaches');
+   ?>
+ </section>
+  <!--================
+   PRICING ============== -->
    <section class="container position-relative mb-5">
      <?php get_template_part('template-parts/our-pricing'); ?>
    </section>
