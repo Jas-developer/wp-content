@@ -26,10 +26,10 @@
               alt="" 
               class="iflex-badge-logo"
             >
-          </div>
+          </div>    
         </div>
 
-        <!-- name -->
+        <!-- name -->==
         <h2>Coach Ming</h2>
 
         <!-- position -->
