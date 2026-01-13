@@ -74,8 +74,25 @@ register_post_type('classes',array(
     ]
   );
 
-
-}
+// i.flex coaches
+register_post_type('coaches',[
+  "labels" => [
+    "name" => "i.Flex Coaches",
+    "singular_name" => "Coaches",
+    "add_new_item" => "Add i.Flex Coach",
+    "name_admin_bar" => "Coach",
+    "edit_item" => "Edit Coach info",
+    "view_item" => "View Coach",
+    "all_items" => "All i.Flex Coach"
+  ],
+  "rewrite" => ["slug" => "coaches"],
+  "public" => true, 
+  "has_archive" => true,
+  "show_in_menu" => true,
+  "supports" => ["title", "editor"],
+  "show_in_rest" => false
+]);
+} 
 
 
 

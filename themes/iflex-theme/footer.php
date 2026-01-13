@@ -1,5 +1,5 @@
 <footer class="<?php
-  if(!is_page(35) AND !is_front_page() AND !is_page(16)) {
+  if(!is_page(35) AND !is_front_page() AND !is_page(16) AND !is_post_type_archive('coaches')) {
     echo 'mt-lg-10 mt-8';
   } else {
     echo '';

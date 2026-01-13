@@ -1,32 +1,20 @@
-<?php ?><div class="container">
-    <h2 class="fs-1 fw-semibold m-0">Our <b>i.<span class="text-danger">Flex</span></b> Coaches</h2>
-   </div>
-<div class="coach-container">
+<?php get_header();?>
+
+<section class="our-coaches-wrapper ">
    
- <div class="container ">
+<div class="coach-container ">
+   
+ <div class="container  ">
     <div class="py-5 ">
-<?php 
-$args = [
-  'post_type' => 'coaches',
-  'posts_per_page' => 3,
-  'orderby' => 'date',
-  'order' => 'ASC'
-
-];
-
-$query = new WP_Query($args); 
-
-
-?>
 
 <?php 
-if($query->have_posts()){
+if(have_posts()){
     
     //  <!-- cards -->
-echo '<div class="w-100">'; 
-echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 w-100">'; 
- while($query->have_posts()){
-  $query->the_post();
+echo '<div class="w-100 mt-10">'; 
+echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-100 g-2">'; 
+ while(have_posts()){
+  the_post();
    $post_id = get_the_ID();
    $image = get_field('iflex_coaches', $post_id);
    $fb_link = get_field('facebook_link', $post_id);
@@ -92,14 +80,9 @@ echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 w-100">';
     
      ?> <!-- VIEW ALL COACHES BUTTON -->
        </div>
-       <div class="view-all-btn-container mt-5">
-          <a href="<?php echo esc_url(get_post_type_archive_link('coaches')); ?>" class="text-decoration-none">
-              <button class="btn bg-danger border-0 rounded-0 text-light">
-              VIEW ALL COACHES
-            </button>
-            </a>
-       </div>
     </div>
+
+   
   <?php
  echo '</div>';
  echo '</div>';
@@ -110,3 +93,7 @@ echo '</div>';
 } ?>
 
    
+
+</section>
+
+ <?php get_footer(); ?>
