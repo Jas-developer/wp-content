@@ -44,5 +44,5 @@ jobs:
           source-path: wp-content/mu-plugins
 
           # Deploy to theme directory
-          destination-path: /home/u222328741/domains/iflexgym.site/public_html/staging/wp-content/
+          destination-path: /home/u222328741/domains/iflexgym.site/public_html/staging/wp-content
           
