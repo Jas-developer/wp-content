@@ -41,7 +41,7 @@ jobs:
           ssh-port: 65002
 
           # Deploy the full theme
-          source-path: iflex-theme
+          source-path: themes/iflex-theme
 
           # Deploy to theme directory
           destination-path: /home/u222328741/domains/iflexgym.site/public_html/staging/wp-content/themes
