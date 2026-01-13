@@ -90,7 +90,7 @@ register_post_type('coaches',[
   "has_archive" => true,
   "show_in_menu" => true,
   "supports" => ["title", "editor"],
-  "show_in_rest" => false
+  "show_in_rest" => true
 ]);
 } 
 
