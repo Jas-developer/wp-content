@@ -3,7 +3,7 @@ name: Publish Website
 on:
   push:
     branches:
-      - our-coaches
+      - main
 
 jobs:
   web-deploy:
