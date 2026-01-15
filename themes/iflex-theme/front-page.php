@@ -31,35 +31,41 @@
   <!-- ==========================
       CLASSES SECTION
   =========================== -->
-  <div class="  position-relative">
+  <div class="classes-section pb-5" style="background-image:url('<?php echo get_theme_file_uri('assets/bg-images/people.jpg') ?>')">
 
     
-    <div class="rounded position-relative  h-100  justify-content-center align-items-center px-3 pt-5  w-100  container">
+    <div class="rounded position-relative   h-100  justify-content-center align-items-center px-3 pt-5  w-100  container">
       <?php get_template_part( 'template-parts/classes'); ?>
     </div>
 
   </div>
 
-
+   <!-- 
+     marco tamayo section
+   -->
+     <section class="marco-tamayo-founder  py-5" style="background-image: url('<?php echo get_theme_file_uri('assets/bg-images/fight-poster.jpg') ?>')">
+      <?php get_template_part('template-parts/marco-tamayo') ?>
+     </section>
   <!-- ==========================
       BE A CERTIFIED TRAINER SECTION
   =========================== -->
-  <section class="container position-relative">
+  <section class="container position-relative ">
     <?php get_template_part( 'template-parts/about-us'); ?>
-    <hr class="text-dark">
   </section>
   <!-- ==================
   OUR COACHES SECTION
   =======================-->
- <section class="our-coaches-wrapper">
+ <section class="our-coaches-wrapper  " >
    <?php
      get_template_part('template-parts/our-coaches');
    ?>
  </section>
   <!--================
    PRICING ============== -->
-   <section class="container position-relative mb-5">
-     <?php get_template_part('template-parts/our-pricing'); ?>
+   <section class='w-100 pb-5' style="background-image:url('<?php echo get_theme_file_uri('assets/bg-images/arm-flexing.webp'); ?>'); background-position:left; background-repeat: no-repeat" class="container position-relative mb-5">
+     <div class="container">
+      <?php get_template_part('template-parts/our-pricing'); ?>
+     </div>
    </section>
   
 </main>

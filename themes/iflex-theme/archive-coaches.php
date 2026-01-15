@@ -12,7 +12,7 @@ if(have_posts()){
     
     //  <!-- cards -->
 echo '<div class="w-100 mt-10">'; 
-echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-100 g-2">'; 
+echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 w-100 g-2">'; 
  while(have_posts()){
   the_post();
    $post_id = get_the_ID();
@@ -25,7 +25,7 @@ echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-100 g-2">';
 
 
     <div class="col">
-      <div class="d-flex flex-column pb-5 bg-light justify-content-center align-items-center">
+      <div class="d-flex flex-column rounded-2 pb-5 bg-light justify-content-center align-items-center">
 
         <!-- image -->
         <div class="coach-img-container d-flex justify-content-center align-items-center">
@@ -45,7 +45,7 @@ echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-100 g-2">';
         </div>
 
         <!-- name -->
-        <h2><?php esc_html(the_title()); ?></h2>
+        <h5><?php esc_html(the_title()); ?></h5>
 
         <!-- position -->
         <div class="bg-danger w-100">

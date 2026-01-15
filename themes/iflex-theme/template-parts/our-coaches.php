@@ -1,7 +1,5 @@
-<?php ?><div class="container">
-    <h2 class="fs-1 fw-semibold m-0">Our <b>i.<span class="text-danger">Flex</span></b> Coaches</h2>
-   </div>
-<div class="coach-container">
+<?php ?>
+<div class="coach-container" style="background-image:url('<?php  echo get_theme_file_uri('assets/bg-images/gloves.webp');?>')">
    
  <div class="container ">
     <div class="py-5 ">
@@ -24,6 +22,9 @@ if($query->have_posts()){
     
     //  <!-- cards -->
 echo '<div class="w-100">'; 
+echo '<div class="container mb-2 mt-2">
+    <h2 class="fs-1 text-white fw-semibold m-0">Our <b>i.<span class="text-danger">Flex</span></b> Coaches</h2>
+   </div>';
 echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 w-100">'; 
  while($query->have_posts()){
   $query->the_post();
@@ -37,7 +38,7 @@ echo ' <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 w-100">';
 
 
     <div class="col">
-      <div class="d-flex flex-column pb-5 bg-light justify-content-center align-items-center">
+      <div class="d-flex flex-column pb-5 rounded-2 bg-light justify-content-center align-items-center">
 
         <!-- image -->
         <div class="coach-img-container d-flex justify-content-center align-items-center">
